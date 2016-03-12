@@ -42,12 +42,9 @@ public final class Main {
     private static final M2GavCalculator GAV_CALCULATOR = new M2GavCalculator();
 
     private static final String[] CONSOLIDATING_GROUP_IDS = new String[] {
-        "net.tirasa.connid", "org.slf4j", "org.springframework.security", "org.springframework", "io.swagger", 
-        "org.activiti", "com.googlecode.wicket-jquery-ui"
+        "net.tirasa.connid", "org.slf4j", "org.springframework.security", "org.springframework", "io.swagger",
+        "org.activiti", "com.googlecode.wicket-jquery-ui", "com.sun.xml.bind", "io.dropwizard.metrics"
     };
-
-    private static final String[] CONSOLIDATING_GROUP_PREFIXES = new String[] {
-        "com.fasterxml.jackson" };
 
     public static void main(final String[] args) throws IOException {
         LOG.debug("Local Maven repo is {}", LOCAL_M2_REPO);
@@ -74,22 +71,21 @@ public final class Main {
                                 LOG.error("Invalid Maven path: {}", path);
                             } else if (!gav.getGroupId().startsWith("org.apache.")
                                     && !gav.getGroupId().startsWith("commons-")
+                                    && !gav.getGroupId().equals("org.codehaus.groovy")
                                     && !gav.getGroupId().equals("xml-apis")) {
 
                                 if (ArrayUtils.contains(CONSOLIDATING_GROUP_IDS, gav.getGroupId())) {
                                     keys.add(gav.getGroupId());
+                                } else if (gav.getGroupId().startsWith("com.fasterxml.jackson")) {
+                                    keys.add("com.fasterxml.jackson");
+                                } else if ("org.webjars".equals(gav.getGroupId())) {
+                                    if (gav.getArtifactId().startsWith("jquery-ui")) {
+                                        keys.add("jquery-ui");
+                                    } else {
+                                        keys.add(gav.getArtifactId());
+                                    }
                                 } else {
-                                    boolean prefixFound = false;
-                                    for (String prefix : CONSOLIDATING_GROUP_PREFIXES) {
-                                        if (gav.getGroupId().startsWith(prefix)) {
-                                            prefixFound = true;
-                                            keys.add(prefix);
-                                        }
-                                    }
-
-                                    if (!prefixFound) {
-                                        keys.add(gav.getGroupId() + ":" + gav.getArtifactId());
-                                    }
+                                    keys.add(gav.getGroupId() + ":" + gav.getArtifactId());
                                 }
                             }
                         }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright (C) 2016 Tirasa
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <entry key="aopalliance:aopalliance"><![CDATA[For AOP Alliance (http://aopalliance.sourceforge.net/):
+This is Public Domain.]]></entry>
+  <entry key="com.fasterxml.jackson"><![CDATA[For Jackson (http://wiki.fasterxml.com/JacksonHome):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="com.google.guava:guava"><![CDATA[For Guava (https://github.com/google/guava):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="com.lmax:disruptor"><![CDATA[For LMAX Disruptor (https://lmax-exchange.github.io/disruptor/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="com.sun.xml.bind><![CDATA[For JAX-B (http://jaxb.java.net/):
+This is licensed under CDDL 1.0, see above.]]></entry>
+  <entry key="com.sun.xml.bind.license">CDDL</entry>
+  <entry key="io.dropwizard.metrics"><![CDATA[For Metrics (http://dropwizard.github.io/metrics/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="io.swagger"><![CDATA[For Swagger (http://swagger.io/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="javax.annotation:javax.annotation-api"><![CDATA[For javax.annotation-api (https://jcp.org/en/jsr/detail?id=250):
+This is licensed under CDDL 1.0, see above.]]></entry>
+  <entry key="javax.annotation:javax.annotation-api.license">CDDL</entry>
+  <entry key="javax.validation:validation-api"><![CDATA[For Bean Validation API (http://beanvalidation.org/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="javax.ws.rs:javax.ws.rs-api"><![CDATA[For javax.ws.rs-api (https://jax-rs-spec.java.net/):
+This is licensed under CDDL 1.0, see above.]]></entry>
+  <entry key="javax.ws.rs:javax.ws.rs-api.license">CDDL</entry>
+  <entry key="joda-time:joda-time"><![CDATA[For Joda Time (http://www.joda.org/joda-time/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="math.geom2d:javaGeom"><![CDATA[For JavaGeom (http://geom-java.sourceforge.net/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="net.sourceforge.serp:serp"><![CDATA[For SERP (http://serp.sourceforge.net/):
+This is licensed under the BSD license, see above.]]></entry>
+  <entry key="net.sourceforge.serp:serp.license">BSD</entry>
+  <entry key="net.tirasa.connid"><![CDATA[For ConnId (http://connid.tirasa.net/):
+This is licensed under the CDDL 1.0, see above.]]></entry>
+  <entry key="net.tirasa.connid.license">CDDL</entry>
+  <entry key="org.activiti"><![CDATA[For Activiti BPM Platform (http://www.activiti.org/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="org.aspectj:aspectjweaver"><![CDATA[For AspectJ (http://www.eclipse.org/aspectj/):
+This is licensed under the EPL 1.0, see above.]]></entry>
+  <entry key="org.aspectj:aspectjweaver.license">EPL</entry>
+  <entry key="org.codehaus.woodstox:stax2-api"><![CDATA[For StAX2 API (http://wiki.fasterxml.com/WoodstoxStax2):
+This is licensed under the BSD license, see above.]]></entry>
+  <entry key="org.codehaus.woodstox:stax2-api.license">BSD</entry>
+  <entry key="org.codehaus.woodstox:woodstox-core-asl"><![CDATA[For Woodstox (http://wiki.fasterxml.com/WoodstoxHome):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="org.jasypt:jasypt"><![CDATA[For jasypt (http://www.jasypt.org/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="org.javassist:javassist"><![CDATA[For Javassist (https://jboss-javassist.github.io/javassist/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="org.mybatis:mybatis"><![CDATA[For MyBatis (http://www.mybatis.org/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="org.quartz-scheduler:quartz"><![CDATA[For Quartz Scheduler (http://quartz-scheduler.org/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="org.reflections:reflections"><![CDATA[For Reflections (https://github.com/ronmamo/reflections):
+This is licensed under the BSD license, see above.]]></entry>
+  <entry key="org.reflections:reflections.license">BSD</entry>
+  <entry key="org.slf4j"><![CDATA[For Simple Logging Facade for Java - SLF4J (http://www.slf4j.org/):
+This is licensed under the MIT license, see above.]]></entry>
+  <entry key="org.slf4j.license">MIT</entry>
+  <entry key="org.springframework"><![CDATA[For Spring Framework (http://projects.spring.io/spring-framework/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="org.springframework.security"><![CDATA[For Spring Security (http://projects.spring.io/spring-security/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="highlightjs"><![CDATA[For highlight.js (http://highlightjs.org/):
+This is licensed under the BSD license, see above.]]></entry>
+  <entry key="highlightjs.license">BSD</entry>
+  <entry key="jquery"><![CDATA[For jQuery (http://jquery.com/):
+This is licensed under the MIT license, see above.]]></entry>
+  <entry key="jquery.license">MIT</entry>
+  <entry key="jquery-ui"><![CDATA[For jQuery UI (http://jqueryui.com/):
+This is licensed under the MIT license, see above.]]></entry>
+  <entry key="jquery-ui.license">MIT</entry>
+  <entry key="org.yaml:snakeyaml"><![CDATA[For SnakeYAML (http://www.snakeyaml.org/):
+This is licensed under the AL 2.0, see above.]]></entry>
+</properties>
