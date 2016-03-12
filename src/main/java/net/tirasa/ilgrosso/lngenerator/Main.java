@@ -15,12 +15,17 @@
  */
 package net.tirasa.ilgrosso.lngenerator;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.EnumSet;
 import java.util.HashSet;
+import java.util.Properties;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -34,6 +39,14 @@ public final class Main {
 
     private static final Logger LOG = LoggerFactory.getLogger(Main.class);
 
+    private static enum LICENSE {
+        BSD,
+        CDDL,
+        EPL,
+        MIT
+
+    }
+
     private static final String LOCAL_M2_REPO = System.getProperty("user.home").
             concat(File.separator).concat(".m2").concat(File.separator).concat("repository");
 
@@ -46,13 +59,28 @@ public final class Main {
         "org.activiti", "com.googlecode.wicket-jquery-ui", "com.sun.xml.bind", "io.dropwizard.metrics"
     };
 
-    public static void main(final String[] args) throws IOException {
+    public static void main(final String[] args) throws IOException, URISyntaxException {
+        assert args.length > 0 : "No arguments provided";
+
+        File source = new File(args[0]);
+        if (!source.isDirectory()) {
+            throw new IllegalArgumentException("Not a directory: " + args[0]);
+        }
+
+        String destPath = args.length > 1 ? args[1] : System.getProperty("java.io.tmpdir");
+        File dest = new File(destPath);
+        if (!dest.isDirectory() || !dest.canWrite()) {
+            throw new IllegalArgumentException("Not a directory, or not writable: " + destPath);
+        }
+
         LOG.debug("Local Maven repo is {}", LOCAL_M2_REPO);
-        LOG.debug("Path argument is {}", args[0]);
+        LOG.debug("Source Path is {}", source.getAbsolutePath());
+        LOG.debug("Destination Path is {}", dest.getAbsolutePath());
+        LOG.warn("Existing LICENSE and NOTICE files in {} will be overwritten!", dest.getAbsolutePath());
 
         Set<String> keys = new HashSet<>();
 
-        Files.walk(Paths.get(args[0])).
+        Files.walk(source.toPath()).
                 filter(Files::isRegularFile).
                 map((final Path path) -> path.getFileName().toString()).
                 filter((String path) -> path.endsWith(".jar")).
@@ -94,6 +122,60 @@ public final class Main {
                     }
                 });
 
-        keys.stream().sorted().forEach(System.out::println);
+        final Properties licenses = new Properties();
+        licenses.loadFromXML(Main.class.getResourceAsStream("/licenses.xml"));
+
+        final Properties notices = new Properties();
+        notices.loadFromXML(Main.class.getResourceAsStream("/notices.xml"));
+
+        BufferedWriter licenseWriter = Files.newBufferedWriter(
+                new File(dest, "LICENSE").toPath(), StandardOpenOption.TRUNCATE_EXISTING);
+        licenseWriter.write(new String(Files.readAllBytes(
+                Paths.get(Main.class.getResource("/LICENSE.template").toURI()))));
+
+        BufferedWriter noticeWriter = Files.newBufferedWriter(
+                new File(dest, "NOTICE").toPath(), StandardOpenOption.TRUNCATE_EXISTING);
+        noticeWriter.write(new String(Files.readAllBytes(
+                Paths.get(Main.class.getResource("/NOTICE.template").toURI()))));
+
+        EnumSet<LICENSE> outputLicenses = EnumSet.noneOf(LICENSE.class);
+
+        keys.stream().sorted().forEach((final String dependency) -> {
+            try {
+                if (licenses.getProperty(dependency) == null) {
+                    LOG.error("Could not find license information about {}", dependency);
+                    System.exit(1);
+                }
+
+                licenseWriter.write("\n==\n\n" + licenses.getProperty(dependency));
+
+                String depLicense = licenses.getProperty(dependency + ".license");
+                if (depLicense != null) {
+                    LICENSE license = LICENSE.valueOf(depLicense);
+                    if (outputLicenses.contains(license)) {
+                        licenseWriter.write(", see above.");
+                    } else {
+                        outputLicenses.add(license);
+
+                        licenseWriter.write(":\n\n");
+                        licenseWriter.write(new String(Files.readAllBytes(
+                                Paths.get(Main.class.getResource("/LICENSE." + license.name()).toURI()))));
+                    }
+                }
+                licenseWriter.write('\n');
+
+                if (notices.getProperty(dependency) != null) {
+                    noticeWriter.write("\n==\n\n" + notices.getProperty(dependency) + "\n");
+                }
+            } catch (Exception e) {
+                LOG.error("While dealing with {}", dependency, e);
+            }
+        });
+
+        licenseWriter.close();
+        noticeWriter.close();
+        
+        LOG.debug("Execution completed successfully, look at {} for the generated LICENSE and NOTICE files",
+                dest.getAbsolutePath());
     }
 }
