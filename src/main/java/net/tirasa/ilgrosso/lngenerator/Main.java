@@ -111,7 +111,7 @@ public final class Main {
                                         && gav.getArtifactId().startsWith("angular-")) {
 
                                     keys.add("org.webjars.bower:angular");
-                                } else if (gav.getGroupId().startsWith("")) {
+                                } else if (gav.getGroupId().startsWith("de.agilecoders")) {
                                     keys.add("wicket-bootstrap");
                                 } else if ("org.webjars".equals(gav.getGroupId())) {
                                     if (gav.getArtifactId().startsWith("jquery-ui")) {
