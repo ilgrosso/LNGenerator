@@ -67,4 +67,66 @@ Copyright 2007, 2016 jQuery Foundation and other contributors.]]></entry>
   <entry key="jquery-ui"><![CDATA[This product includes the jQuery UI JavaScript Library.
 Copyright 2007, 2015 jQuery Foundation and other contributors.]]></entry>
   <entry key="org.yaml:snakeyaml"><![CDATA[This product inclues software developed by the SnakeYAML project.]]></entry>
+  <entry key="Eonasdan-bootstrap-datetimepicker"><![CDATA[This product inclues software developed by the Bootstrap 3 Datepicker project.
+Copyright (c) 2015 Jonathan Peterson (@Eonasdan)]]></entry>
+  <entry key="animate.css"><![CDATA[This product inclues software developed by the Animate.css project.
+Copyright (c) 2016 Daniel Eden]]></entry>
+  <entry key="args4j:args4j"><![CDATA[This product inclues software developed by the args4j project.
+Copyright (c) 2013 Kohsuke Kawaguchi and other contributors]]></entry>
+  <entry key="bootbox"><![CDATA[This product inclues software developed by the Bootbox.js project.
+Copyright (C) 2011-2015 by Nick Payne nick@kurai.co.uk]]></entry>
+  <entry key="bootstrap"><![CDATA[This product inclues software developed by the Bootstrap project.
+Copyright (c) 2011-2016 Twitter, Inc.]]></entry>
+  <entry key="codemirror"><![CDATA[This product inclues software developed by the CodeMirror project.
+Copyright (C) 2016 by Marijn Haverbeke <marijnh@gmail.com> and others]]></entry>
+  <entry key="codemirror"><![CDATA[This product inclues software developed by the Modernizr project.
+Copyright (C) 2016]]></entry>
+  <entry key="jsplumb"><![CDATA[This product inclues software developed by the jsPlumb project.
+Copyright (c) 2010 - 2014 jsPlumb, http://jsplumbtoolkit.com/]]></entry>
+  <entry key="wsdl4j:wsdl4j"><![CDATA[This product inclues software developed by the Web Services Description Language for Java project.
+Copyright (c) Dice.
+All Rights Reserved.]]></entry>
+  <entry key="ionicons"><![CDATA[This product inclues software developed by the Ionicons project.
+Copyright (c) 2016 Drifty (http://drifty.com/)]]></entry>
+  <entry key="com.googlecode.wicket-jquery-ui"><![CDATA[This product inclues software developed by the Wicket - jQuery UI project.
+Copyright 2012-2013 Sebastien Briquet]]></entry>
+  <entry key="jquery-cookie"><![CDATA[This product inclues software developed by the jquery.cookie project.
+Copyright 2014 Klaus Hartl]]></entry>
+  <entry key="jquerypp"><![CDATA[This product inclues software developed by the jQuery++ project.
+Copyright (C) 2012 Bitovi]]></entry>
+  <entry key="org.webjars.npm:moment"><![CDATA[This product inclues software developed by the Moment.js project.
+Copyright (c) 2011-2016 Tim Wood, Iskren Chernev, Moment.js contributors]]></entry>
+  <entry key="org.webjars.npm:moment-jdateformatparser"><![CDATA[This product inclues software developed by the moment-jdateformatparser project.
+Copyright (c) 2013 MadMG]]></entry>
+  <entry key="org.ow2.asm:asm"><![CDATA[This product inclues software developed by the ASM project.
+Copyright (c) 2000-2011 INRIA, France Telecom
+All rights reserved.]]></entry>
+  <entry key="org.threeten:threetenbp"><![CDATA[This product inclues software developed by the ThreeTen Backport project.
+Copyright (c) 2007-present, Stephen Colebourne & Michael Nascimento Santos]]></entry>
+  <entry key="org.threeten:threetenbp"><![CDATA[This product inclues software developed by the spin.js project.
+Copyright (c) 2011-2015 Felix Gnass [fgnass at gmail dot com]]]></entry>
+  <entry key="typeahead.js"><![CDATA[This product inclues software developed by the typeahead.js project.
+Copyright (c) 2013-2014 Twitter, Inc]]]></entry>
+  <entry key="x-editable-bootstrap"><![CDATA[This product inclues software developed by the X-editable project.
+Copyright (c) 2012 Vitaliy Potapov]]]></entry>
+  <entry key="bootstrap-select"><![CDATA[This product inclues software developed by the bootstrap-select project.
+Copyright (c) 2013-2015 bootstrap-select]]]></entry>
+  <entry key="kendo-ui-core"><![CDATA[This product inclues software developed by the Kendo UI project.
+Copyright (c) 2014-2015 Telerik]]]></entry>
+  <entry key="lodash"><![CDATA[This product inclues software developed by the lodash project.
+Copyright jQuery Foundation and other contributors <https://jquery.org/>]]]></entry>
+  <entry key="angular-ui-bootstrap"><![CDATA[This product inclues software developed by the AngularJS UI Bootstrap project.
+Copyright (c) 2012-2016 the AngularUI Team, https://github.com/organizations/angular-ui/teams/291112]]]></entry>
+  <entry key="angular-ui-router"><![CDATA[This product inclues software developed by the AngularJS UI Router project.
+Copyright (c) 2013-2015 The AngularUI Team, Karsten Sperling]]></entry>
+  <entry key="angular-ui-select"><![CDATA[This product inclues software developed by the AngularJS UI Select project.
+Copyright (c) 2013-2014 AngularUI]]></entry>
+  <entry key="org.webjars.bower:angular"><![CDATA[This product inclues software developed by the AngularJS project.
+Copyright (c) 2014-2016 Google, Inc. http://angular.io]]></entry>
+  <entry key="org.webjars.bower:FileSaver.js"><![CDATA[This product inclues software developed by the FileSaver.js project.
+Copyright (c) 2015 Carlos A. Gomes.]]></entry>
+  <entry key="org.webjars.bower:select2"><![CDATA[This product inclues software developed by the Select2 project.
+Copyright (c) 2012-2015 Kevin Brown, Igor Vaynberg, and Select2 contributors]]></entry>
+  <entry key="org.webjars.bower:ng-password-strength"><![CDATA[This product inclues software developed by the ng-password-strength project.
+Copyright (c) 2014 Salvador Subarroca subarroca@gmail.com]]></entry>
 </properties>

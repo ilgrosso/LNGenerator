@@ -43,7 +43,8 @@ public final class Main {
         BSD,
         CDDL,
         EPL,
-        MIT
+        MIT,
+        CPL
 
     }
 
@@ -106,6 +107,12 @@ public final class Main {
                                     keys.add(gav.getGroupId());
                                 } else if (gav.getGroupId().startsWith("com.fasterxml.jackson")) {
                                     keys.add("com.fasterxml.jackson");
+                                } else if (gav.getGroupId().equals("org.webjars.bower")
+                                        && gav.getArtifactId().startsWith("angular-")) {
+
+                                    keys.add("org.webjars.bower:angular");
+                                } else if (gav.getGroupId().startsWith("")) {
+                                    keys.add("wicket-bootstrap");
                                 } else if ("org.webjars".equals(gav.getGroupId())) {
                                     if (gav.getArtifactId().startsWith("jquery-ui")) {
                                         keys.add("jquery-ui");
@@ -129,52 +136,51 @@ public final class Main {
         notices.loadFromXML(Main.class.getResourceAsStream("/notices.xml"));
 
         BufferedWriter licenseWriter = Files.newBufferedWriter(
-                new File(dest, "LICENSE").toPath(), StandardOpenOption.TRUNCATE_EXISTING);
+                new File(dest, "LICENSE").toPath(), StandardOpenOption.CREATE);
         licenseWriter.write(new String(Files.readAllBytes(
                 Paths.get(Main.class.getResource("/LICENSE.template").toURI()))));
 
         BufferedWriter noticeWriter = Files.newBufferedWriter(
-                new File(dest, "NOTICE").toPath(), StandardOpenOption.TRUNCATE_EXISTING);
+                new File(dest, "NOTICE").toPath(), StandardOpenOption.CREATE);
         noticeWriter.write(new String(Files.readAllBytes(
                 Paths.get(Main.class.getResource("/NOTICE.template").toURI()))));
 
         EnumSet<LICENSE> outputLicenses = EnumSet.noneOf(LICENSE.class);
 
         keys.stream().sorted().forEach((final String dependency) -> {
-            try {
-                if (licenses.getProperty(dependency) == null) {
-                    LOG.error("Could not find license information about {}", dependency);
-                    System.exit(1);
-                }
+            if (licenses.getProperty(dependency) == null) {
+                LOG.error("Could not find license information about {}", dependency);
+            } else {
+                try {
+                    licenseWriter.write("\n==\n\n" + licenses.getProperty(dependency));
 
-                licenseWriter.write("\n==\n\n" + licenses.getProperty(dependency));
+                    String depLicense = licenses.getProperty(dependency + ".license");
+                    if (depLicense != null) {
+                        LICENSE license = LICENSE.valueOf(depLicense);
+                        if (outputLicenses.contains(license)) {
+                            licenseWriter.write(", see above.");
+                        } else {
+                            outputLicenses.add(license);
 
-                String depLicense = licenses.getProperty(dependency + ".license");
-                if (depLicense != null) {
-                    LICENSE license = LICENSE.valueOf(depLicense);
-                    if (outputLicenses.contains(license)) {
-                        licenseWriter.write(", see above.");
-                    } else {
-                        outputLicenses.add(license);
-
-                        licenseWriter.write(":\n\n");
-                        licenseWriter.write(new String(Files.readAllBytes(
-                                Paths.get(Main.class.getResource("/LICENSE." + license.name()).toURI()))));
+                            licenseWriter.write(":\n\n");
+                            licenseWriter.write(new String(Files.readAllBytes(
+                                    Paths.get(Main.class.getResource("/LICENSE." + license.name()).toURI()))));
+                        }
                     }
-                }
-                licenseWriter.write('\n');
+                    licenseWriter.write('\n');
 
-                if (notices.getProperty(dependency) != null) {
-                    noticeWriter.write("\n==\n\n" + notices.getProperty(dependency) + "\n");
+                    if (notices.getProperty(dependency) != null) {
+                        noticeWriter.write("\n==\n\n" + notices.getProperty(dependency) + "\n");
+                    }
+                } catch (Exception e) {
+                    LOG.error("While dealing with {}", dependency, e);
                 }
-            } catch (Exception e) {
-                LOG.error("While dealing with {}", dependency, e);
             }
         });
 
         licenseWriter.close();
         noticeWriter.close();
-        
+
         LOG.debug("Execution completed successfully, look at {} for the generated LICENSE and NOTICE files",
                 dest.getAbsolutePath());
     }

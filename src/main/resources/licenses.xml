@@ -90,4 +90,99 @@ This is licensed under the MIT license]]></entry>
   <entry key="jquery-ui.license">MIT</entry>
   <entry key="org.yaml:snakeyaml"><![CDATA[For SnakeYAML (http://www.snakeyaml.org/):
 This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="Eonasdan-bootstrap-datetimepicker"><![CDATA[For Bootstrap 3 Datepicker (http://eonasdan.github.io/bootstrap-datetimepicker):
+This is licensed under the MIT license]]></entry>
+  <entry key="Eonasdan-bootstrap-datetimepicker.license">MIT</entry>
+  <entry key="animate.css"><![CDATA[For Animate.css (http://daneden.github.io/animate.css/):
+This is licensed under the MIT license]]></entry>
+  <entry key="animate.css.license">MIT</entry>
+  <entry key="args4j:args4j"><![CDATA[For args4j (http://args4j.kohsuke.org):
+This is licensed under the MIT license]]></entry>
+  <entry key="args4j:args4j.license">MIT</entry>
+  <entry key="bootbox"><![CDATA[For Bootbox.js (http://bootboxjs.com/):
+This is licensed under the MIT license]]></entry>
+  <entry key="bootbox.license">MIT</entry>
+  <entry key="bootstrap"><![CDATA[For Bootstrap (http://getbootstrap.com/):
+This is licensed under the MIT license]]></entry>
+  <entry key="bootstrap.license">MIT</entry>
+  <entry key="codemirror"><![CDATA[For CodeMirror (http://codemirror.net/):
+This is licensed under the MIT license]]></entry>
+  <entry key="codemirror.license">MIT</entry>
+  <entry key="modernizr"><![CDATA[For Modernizr (https://modernizr.com):
+This is licensed under the MIT license]]></entry>
+  <entry key="modernizr.license">MIT</entry>
+  <entry key="jsplumb"><![CDATA[For jsPlumb (http://jsplumbtoolkit.com/):
+This is licensed under the MIT license]]></entry>
+  <entry key="jsplumb.license">MIT</entry>
+  <entry key="wsdl4j:wsdl4j"><![CDATA[For Web Services Description Language for Java (http://wsdl4j.sourceforge.net/):
+This is licensed under the CPL license]]></entry>
+  <entry key="wsdl4j:wsdl4j.license">CPL</entry>
+  <entry key="ionicons"><![CDATA[For Ionicons (http://ionicons.com/):
+This is licensed under the MIT license]]></entry>
+  <entry key="ionicons.license">MIT</entry>
+  <entry key="font-awesome"><![CDATA[For Font Awesome (http://fontawesome.io/):
+This is licensed under the MIT license]]></entry>
+  <entry key="font-awesome.license">MIT</entry>
+  <entry key="com.pingunaut:wicket-chartjs"><![CDATA[For Wicket-chartjs (https://pingunaut.com/wicket-chartjs/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="wicket-bootstrap"><![CDATA[For Wicket-Bootstrap (http://wb.agilecoders.de/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="com.googlecode.wicket-jquery-ui"><![CDATA[For Wicket - jQuery UI (http://www.7thweb.net/wicket-jquery-ui/):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="jquery-cookie"><![CDATA[For jquery.cookie (https://github.com/carhartl/jquery-cookie):
+This is licensed under the MIT license]]></entry>
+  <entry key="jquery-cookie.license">MIT</entry>
+  <entry key="jquerypp"><![CDATA[For jQuery++ (http://jquerypp.com/):
+This is licensed under the MIT license]]></entry>
+  <entry key="jquerypp.license">MIT</entry>
+  <entry key="org.webjars.npm:moment"><![CDATA[For Moment.js (http://momentjs.com/):
+This is licensed under the MIT license]]></entry>
+  <entry key="org.webjars.npm:moment.license">MIT</entry>
+  <entry key="org.webjars.npm:moment-jdateformatparser"><![CDATA[For moment-jdateformatparser (https://github.com/MadMG/moment-jdateformatparser):
+This is licensed under the MIT license]]></entry>
+  <entry key="org.webjars.npm:moment-jdateformatparser.license">MIT</entry>
+  <entry key="org.ow2.asm:asm"><![CDATA[For ASM (http://asm.ow2.org/):
+This is licensed under the BSD license]]></entry>
+  <entry key="org.ow2.asm:asm.license">BSD</entry>
+  <entry key="org.threeten:threetenbp"><![CDATA[For ThreeTen Backport (http://www.threeten.org/threetenbp/):
+This is licensed under the BSD license]]></entry>
+  <entry key="org.threeten:threetenbp.license">BSD</entry>
+  <entry key="spin-js"><![CDATA[For spin.js (http://spin.js.org/):
+This is licensed under the MIT license]]></entry>
+  <entry key="spin-js.license">MIT</entry>
+  <entry key="typeaheadjs"><![CDATA[For typeahead.js (http://twitter.github.io/typeahead.js/):
+This is licensed under the MIT license]]></entry>
+  <entry key="typeaheadjs.license">MIT</entry>
+  <entry key="x-editable-bootstrap"><![CDATA[For X-editable (http://vitalets.github.io/x-editable/):
+This is licensed under the MIT license]]></entry>
+  <entry key="x-editable-bootstrap.license">MIT</entry>
+  <entry key="bootstrap-select"><![CDATA[For bootstrap-select (http://silviomoreto.github.io/bootstrap-select/):
+This is licensed under the MIT license]]></entry>
+  <entry key="bootstrap-select.license">MIT</entry>
+  <entry key="kendo-ui-core"><![CDATA[For Kendo UI (http://www.telerik.com/kendo-ui):
+This is licensed under the AL 2.0, see above.]]></entry>
+  <entry key="lodash"><![CDATA[For lodash (https://lodash.com/):
+This is licensed under the MIT license]]></entry>
+  <entry key="lodash.license">MIT</entry>
+  <entry key="angular-ui-bootstrap"><![CDATA[For AngularJS UI Bootstrap (http://angular-ui.github.io/bootstrap/):
+This is licensed under the MIT license]]></entry>
+  <entry key="angular-ui-bootstrap.license">MIT</entry>
+  <entry key="angular-ui-router"><![CDATA[For AngularJS UI Router (http://angular-ui.github.io/ui-router/site):
+This is licensed under the MIT license]]></entry>
+  <entry key="angular-ui-router.license">MIT</entry>
+  <entry key="angular-ui-select"><![CDATA[For AngularJS UI Select (https://github.com/angular-ui/ui-select/):
+This is licensed under the MIT license]]></entry>
+  <entry key="angular-ui-select.license">MIT</entry>
+  <entry key="org.webjars.bower:angular"><![CDATA[For AngularJS (https://angular.io/):
+This is licensed under the MIT license]]></entry>
+  <entry key="org.webjars.bower:angular.license">MIT</entry>
+  <entry key="org.webjars.bower:FileSaver.js"><![CDATA[For FileSaver.js (http://carlos-algms.github.io/work/html5-saveas-filesaver.js/):
+This is licensed under the MIT license]]></entry>
+  <entry key="org.webjars.bower:FileSaver.js.license">MIT</entry>
+  <entry key="org.webjars.bower:select2"><![CDATA[For Select2 (https://select2.github.io/):
+This is licensed under the MIT license]]></entry>
+  <entry key="org.webjars.bower:select2.license">MIT</entry>
+  <entry key="org.webjars.bower:ng-password-strength"><![CDATA[For ng-password-strength (https://github.com/subarroca/ng-password-strength):
+This is licensed under the MIT license]]></entry>
+  <entry key="org.webjars.bower:ng-password-strength.license">MIT</entry>
 </properties>
