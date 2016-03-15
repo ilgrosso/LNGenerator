@@ -40,11 +40,22 @@ public final class Main {
     private static final Logger LOG = LoggerFactory.getLogger(Main.class);
 
     private static enum LICENSE {
-        BSD,
-        CDDL,
-        EPL,
-        MIT,
-        CPL
+        PUBLIC_DOMAIN("Public Domain"),
+        BSD("BSD license"),
+        CDDL("CDDL 1.0"),
+        EPL("EPL 1.0"),
+        MIT("MIT license"),
+        CPL("CPL");
+
+        private final String label;
+
+        LICENSE(String label) {
+            this.label = label;
+        }
+
+        public String getLabel() {
+            return label;
+        }
 
     }
 
@@ -152,19 +163,28 @@ public final class Main {
                 LOG.error("Could not find license information about {}", dependency);
             } else {
                 try {
-                    licenseWriter.write("\n==\n\n" + licenses.getProperty(dependency));
+                    licenseWriter.write("\n==\n\nFor " + licenses.getProperty(dependency) + ":\n");
 
                     String depLicense = licenses.getProperty(dependency + ".license");
-                    if (depLicense != null) {
+                    if (depLicense == null) {
+                        licenseWriter.write("This is licensed under the AL 2.0, see above.");
+                    } else {
                         LICENSE license = LICENSE.valueOf(depLicense);
-                        if (outputLicenses.contains(license)) {
-                            licenseWriter.write(", see above.");
-                        } else {
-                            outputLicenses.add(license);
 
-                            licenseWriter.write(":\n\n");
-                            licenseWriter.write(new String(Files.readAllBytes(
-                                    Paths.get(Main.class.getResource("/LICENSE." + license.name()).toURI()))));
+                        if (license == LICENSE.PUBLIC_DOMAIN) {
+                            licenseWriter.write("This is " + license.getLabel() + ".");
+                        } else {
+                            licenseWriter.write("This is licensed under the " + license.getLabel());
+
+                            if (outputLicenses.contains(license)) {
+                                licenseWriter.write(", see above.");
+                            } else {
+                                outputLicenses.add(license);
+
+                                licenseWriter.write(":\n\n");
+                                licenseWriter.write(new String(Files.readAllBytes(
+                                        Paths.get(Main.class.getResource("/LICENSE." + license.name()).toURI()))));
+                            }
                         }
                     }
                     licenseWriter.write('\n');

@@ -18,177 +18,113 @@
 -->
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
-  <entry key="aopalliance:aopalliance"><![CDATA[For AOP Alliance (http://aopalliance.sourceforge.net/):
-This is Public Domain.]]></entry>
-  <entry key="com.fasterxml.jackson"><![CDATA[For Jackson (http://wiki.fasterxml.com/JacksonHome):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="com.google.guava:guava"><![CDATA[For Guava (https://github.com/google/guava):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="com.lmax:disruptor"><![CDATA[For LMAX Disruptor (https://lmax-exchange.github.io/disruptor/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="com.sun.xml.bind"><![CDATA[For JAX-B (http://jaxb.java.net/):
-This is licensed under CDDL 1.0]]></entry>
+  <entry key="aopalliance:aopalliance"><![CDATA[AOP Alliance (http://aopalliance.sourceforge.net/)]]></entry>
+  <entry key="aopalliance:aopalliance.license">PUBLIC_DOMAIN</entry>
+  <entry key="com.fasterxml.jackson"><![CDATA[Jackson (http://wiki.fasterxml.com/JacksonHome)]]></entry>
+  <entry key="com.google.guava:guava"><![CDATA[Guava (https://github.com/google/guava)]]></entry>
+  <entry key="com.lmax:disruptor"><![CDATA[LMAX Disruptor (https://lmax-exchange.github.io/disruptor/)]]></entry>
+  <entry key="com.sun.xml.bind"><![CDATA[JAX-B (http://jaxb.java.net/)]]></entry>
   <entry key="com.sun.xml.bind.license">CDDL</entry>
-  <entry key="io.dropwizard.metrics"><![CDATA[For Metrics (http://dropwizard.github.io/metrics/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="io.swagger"><![CDATA[For Swagger (http://swagger.io/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="javax.annotation:javax.annotation-api"><![CDATA[For javax.annotation-api (https://jcp.org/en/jsr/detail?id=250):
-This is licensed under CDDL 1.0]]></entry>
+  <entry key="io.dropwizard.metrics"><![CDATA[Metrics (http://dropwizard.github.io/metrics/)]]></entry>
+  <entry key="io.swagger"><![CDATA[Swagger (http://swagger.io/)]]></entry>
+  <entry key="javax.annotation:javax.annotation-api"><![CDATA[javax.annotation-api (https://jcp.org/en/jsr/detail?id=250)]]></entry>
   <entry key="javax.annotation:javax.annotation-api.license">CDDL</entry>
-  <entry key="javax.validation:validation-api"><![CDATA[For Bean Validation API (http://beanvalidation.org/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="javax.ws.rs:javax.ws.rs-api"><![CDATA[For javax.ws.rs-api (https://jax-rs-spec.java.net/):
-This is licensed under CDDL 1.0]]></entry>
+  <entry key="javax.validation:validation-api"><![CDATA[Bean Validation API (http://beanvalidation.org/)]]></entry>
+  <entry key="javax.ws.rs:javax.ws.rs-api"><![CDATA[javax.ws.rs-api (https://jax-rs-spec.java.net/)]]></entry>
   <entry key="javax.ws.rs:javax.ws.rs-api.license">CDDL</entry>
-  <entry key="joda-time:joda-time"><![CDATA[For Joda Time (http://www.joda.org/joda-time/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="math.geom2d:javaGeom"><![CDATA[For JavaGeom (http://geom-java.sourceforge.net/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="net.sourceforge.serp:serp"><![CDATA[For SERP (http://serp.sourceforge.net/):
-This is licensed under the BSD license]]></entry>
+  <entry key="joda-time:joda-time"><![CDATA[Joda Time (http://www.joda.org/joda-time/)]]></entry>
+  <entry key="math.geom2d:javaGeom"><![CDATA[JavaGeom (http://geom-java.sourceforge.net/)]]></entry>
+  <entry key="net.sourceforge.serp:serp"><![CDATA[SERP (http://serp.sourceforge.net/)]]></entry>
   <entry key="net.sourceforge.serp:serp.license">BSD</entry>
-  <entry key="net.tirasa.connid"><![CDATA[For ConnId (http://connid.tirasa.net/):
-This is licensed under the CDDL 1.0]]></entry>
+  <entry key="net.tirasa.connid"><![CDATA[ConnId (http://connid.tirasa.net/)]]></entry>
   <entry key="net.tirasa.connid.license">CDDL</entry>
-  <entry key="org.activiti"><![CDATA[For Activiti BPM Platform (http://www.activiti.org/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="org.aspectj:aspectjweaver"><![CDATA[For AspectJ (http://www.eclipse.org/aspectj/):
-This is licensed under the EPL 1.0]]></entry>
+  <entry key="org.activiti"><![CDATA[Activiti BPM Platform (http://www.activiti.org/)]]></entry>
+  <entry key="org.aspectj:aspectjweaver"><![CDATA[AspectJ (http://www.eclipse.org/aspectj/)]]></entry>
   <entry key="org.aspectj:aspectjweaver.license">EPL</entry>
-  <entry key="org.codehaus.woodstox:stax2-api"><![CDATA[For StAX2 API (http://wiki.fasterxml.com/WoodstoxStax2):
-This is licensed under the BSD license]]></entry>
+  <entry key="org.codehaus.woodstox:stax2-api"><![CDATA[StAX2 API (http://wiki.fasterxml.com/WoodstoxStax2)]]></entry>
   <entry key="org.codehaus.woodstox:stax2-api.license">BSD</entry>
-  <entry key="org.codehaus.woodstox:woodstox-core-asl"><![CDATA[For Woodstox (http://wiki.fasterxml.com/WoodstoxHome):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="org.jasypt:jasypt"><![CDATA[For jasypt (http://www.jasypt.org/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="org.javassist:javassist"><![CDATA[For Javassist (https://jboss-javassist.github.io/javassist/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="org.mybatis:mybatis"><![CDATA[For MyBatis (http://www.mybatis.org/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="org.quartz-scheduler:quartz"><![CDATA[For Quartz Scheduler (http://quartz-scheduler.org/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="org.reflections:reflections"><![CDATA[For Reflections (https://github.com/ronmamo/reflections):
-This is licensed under the BSD license]]></entry>
+  <entry key="org.codehaus.woodstox:woodstox-core-asl"><![CDATA[Woodstox (http://wiki.fasterxml.com/WoodstoxHome)]]></entry>
+  <entry key="org.jasypt:jasypt"><![CDATA[jasypt (http://www.jasypt.org/)]]></entry>
+  <entry key="org.javassist:javassist"><![CDATA[Javassist (https://jboss-javassist.github.io/javassist/)]]></entry>
+  <entry key="org.mybatis:mybatis"><![CDATA[MyBatis (http://www.mybatis.org/)]]></entry>
+  <entry key="org.quartz-scheduler:quartz"><![CDATA[Quartz Scheduler (http://quartz-scheduler.org/)]]></entry>
+  <entry key="org.reflections:reflections"><![CDATA[Reflections (https://github.com/ronmamo/reflections)]]></entry>
   <entry key="org.reflections:reflections.license">BSD</entry>
-  <entry key="org.slf4j"><![CDATA[For Simple Logging Facade for Java - SLF4J (http://www.slf4j.org/):
-This is licensed under the MIT license]]></entry>
+  <entry key="org.slf4j"><![CDATA[Simple Logging Facade for Java - SLF4J (http://www.slf4j.org/)]]></entry>
   <entry key="org.slf4j.license">MIT</entry>
-  <entry key="org.springframework"><![CDATA[For Spring Framework (http://projects.spring.io/spring-framework/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="org.springframework.security"><![CDATA[For Spring Security (http://projects.spring.io/spring-security/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="highlightjs"><![CDATA[For highlight.js (http://highlightjs.org/):
-This is licensed under the BSD license]]></entry>
+  <entry key="org.springframework"><![CDATA[Spring Framework (http://projects.spring.io/spring-framework/)]]></entry>
+  <entry key="org.springframework.security"><![CDATA[Spring Security (http://projects.spring.io/spring-security/)]]></entry>
+  <entry key="highlightjs"><![CDATA[highlight.js (http://highlightjs.org/)]]></entry>
   <entry key="highlightjs.license">BSD</entry>
-  <entry key="jquery"><![CDATA[For jQuery (http://jquery.com/):
-This is licensed under the MIT license]]></entry>
+  <entry key="jquery"><![CDATA[jQuery (http://jquery.com/)]]></entry>
   <entry key="jquery.license">MIT</entry>
-  <entry key="jquery-ui"><![CDATA[For jQuery UI (http://jqueryui.com/):
-This is licensed under the MIT license]]></entry>
+  <entry key="jquery-ui"><![CDATA[jQuery UI (http://jqueryui.com/)]]></entry>
   <entry key="jquery-ui.license">MIT</entry>
-  <entry key="org.yaml:snakeyaml"><![CDATA[For SnakeYAML (http://www.snakeyaml.org/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="Eonasdan-bootstrap-datetimepicker"><![CDATA[For Bootstrap 3 Datepicker (http://eonasdan.github.io/bootstrap-datetimepicker):
-This is licensed under the MIT license]]></entry>
+  <entry key="org.yaml:snakeyaml"><![CDATA[SnakeYAML (http://www.snakeyaml.org/)]]></entry>
+  <entry key="Eonasdan-bootstrap-datetimepicker"><![CDATA[Bootstrap 3 Datepicker (http://eonasdan.github.io/bootstrap-datetimepicker)]]></entry>
   <entry key="Eonasdan-bootstrap-datetimepicker.license">MIT</entry>
-  <entry key="animate.css"><![CDATA[For Animate.css (http://daneden.github.io/animate.css/):
-This is licensed under the MIT license]]></entry>
+  <entry key="animate.css"><![CDATA[Animate.css (http://daneden.github.io/animate.css/)]]></entry>
   <entry key="animate.css.license">MIT</entry>
-  <entry key="args4j:args4j"><![CDATA[For args4j (http://args4j.kohsuke.org):
-This is licensed under the MIT license]]></entry>
+  <entry key="args4j:args4j"><![CDATA[args4j (http://args4j.kohsuke.org)]]></entry>
   <entry key="args4j:args4j.license">MIT</entry>
-  <entry key="bootbox"><![CDATA[For Bootbox.js (http://bootboxjs.com/):
-This is licensed under the MIT license]]></entry>
+  <entry key="bootbox"><![CDATA[Bootbox.js (http://bootboxjs.com/)]]></entry>
   <entry key="bootbox.license">MIT</entry>
-  <entry key="bootstrap"><![CDATA[For Bootstrap (http://getbootstrap.com/):
-This is licensed under the MIT license]]></entry>
+  <entry key="bootstrap"><![CDATA[Bootstrap (http://getbootstrap.com/)]]></entry>
   <entry key="bootstrap.license">MIT</entry>
-  <entry key="codemirror"><![CDATA[For CodeMirror (http://codemirror.net/):
-This is licensed under the MIT license]]></entry>
+  <entry key="codemirror"><![CDATA[CodeMirror (http://codemirror.net/)]]></entry>
   <entry key="codemirror.license">MIT</entry>
-  <entry key="modernizr"><![CDATA[For Modernizr (https://modernizr.com):
-This is licensed under the MIT license]]></entry>
+  <entry key="modernizr"><![CDATA[Modernizr (https://modernizr.com)]]></entry>
   <entry key="modernizr.license">MIT</entry>
-  <entry key="jsplumb"><![CDATA[For jsPlumb (http://jsplumbtoolkit.com/):
-This is licensed under the MIT license]]></entry>
+  <entry key="jsplumb"><![CDATA[jsPlumb (http://jsplumbtoolkit.com/)]]></entry>
   <entry key="jsplumb.license">MIT</entry>
-  <entry key="wsdl4j:wsdl4j"><![CDATA[For Web Services Description Language for Java (http://wsdl4j.sourceforge.net/):
-This is licensed under the CPL license]]></entry>
+  <entry key="wsdl4j:wsdl4j"><![CDATA[Web Services Description Language for Java (http://wsdl4j.sourceforge.net/)]]></entry>
   <entry key="wsdl4j:wsdl4j.license">CPL</entry>
-  <entry key="ionicons"><![CDATA[For Ionicons (http://ionicons.com/):
-This is licensed under the MIT license]]></entry>
+  <entry key="ionicons"><![CDATA[Ionicons (http://ionicons.com/)]]></entry>
   <entry key="ionicons.license">MIT</entry>
-  <entry key="font-awesome"><![CDATA[For Font Awesome (http://fontawesome.io/):
-This is licensed under the MIT license]]></entry>
+  <entry key="font-awesome"><![CDATA[Font Awesome (http://fontawesome.io/)]]></entry>
   <entry key="font-awesome.license">MIT</entry>
-  <entry key="com.pingunaut:wicket-chartjs"><![CDATA[For Wicket-chartjs (https://pingunaut.com/wicket-chartjs/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="wicket-bootstrap"><![CDATA[For Wicket-Bootstrap (http://wb.agilecoders.de/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="com.googlecode.wicket-jquery-ui"><![CDATA[For Wicket - jQuery UI (http://www.7thweb.net/wicket-jquery-ui/):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="jquery-cookie"><![CDATA[For jquery.cookie (https://github.com/carhartl/jquery-cookie):
-This is licensed under the MIT license]]></entry>
+  <entry key="com.pingunaut:wicket-chartjs"><![CDATA[Wicket-chartjs (https://pingunaut.com/wicket-chartjs/)]]></entry>
+  <entry key="wicket-bootstrap"><![CDATA[Wicket-Bootstrap (http://wb.agilecoders.de/)]]></entry>
+  <entry key="com.googlecode.wicket-jquery-ui"><![CDATA[Wicket - jQuery UI (http://www.7thweb.net/wicket-jquery-ui/)]]></entry>
+  <entry key="jquery-cookie"><![CDATA[jquery.cookie (https://github.com/carhartl/jquery-cookie)]]></entry>
   <entry key="jquery-cookie.license">MIT</entry>
-  <entry key="jquerypp"><![CDATA[For jQuery++ (http://jquerypp.com/):
-This is licensed under the MIT license]]></entry>
+  <entry key="jquerypp"><![CDATA[jQuery++ (http://jquerypp.com/)]]></entry>
   <entry key="jquerypp.license">MIT</entry>
-  <entry key="org.webjars.npm:moment"><![CDATA[For Moment.js (http://momentjs.com/):
-This is licensed under the MIT license]]></entry>
+  <entry key="org.webjars.npm:moment"><![CDATA[Moment.js (http://momentjs.com/)]]></entry>
   <entry key="org.webjars.npm:moment.license">MIT</entry>
-  <entry key="org.webjars.npm:moment-jdateformatparser"><![CDATA[For moment-jdateformatparser (https://github.com/MadMG/moment-jdateformatparser):
-This is licensed under the MIT license]]></entry>
+  <entry key="org.webjars.npm:moment-jdateformatparser"><![CDATA[moment-jdateformatparser (https://github.com/MadMG/moment-jdateformatparser)]]></entry>
   <entry key="org.webjars.npm:moment-jdateformatparser.license">MIT</entry>
-  <entry key="org.ow2.asm:asm"><![CDATA[For ASM (http://asm.ow2.org/):
-This is licensed under the BSD license]]></entry>
+  <entry key="org.ow2.asm:asm"><![CDATA[ASM (http://asm.ow2.org/)]]></entry>
   <entry key="org.ow2.asm:asm.license">BSD</entry>
-  <entry key="org.threeten:threetenbp"><![CDATA[For ThreeTen Backport (http://www.threeten.org/threetenbp/):
-This is licensed under the BSD license]]></entry>
+  <entry key="org.threeten:threetenbp"><![CDATA[ThreeTen Backport (http://www.threeten.org/threetenbp/)]]></entry>
   <entry key="org.threeten:threetenbp.license">BSD</entry>
-  <entry key="spin-js"><![CDATA[For spin.js (http://spin.js.org/):
-This is licensed under the MIT license]]></entry>
+  <entry key="spin-js"><![CDATA[spin.js (http://spin.js.org/)]]></entry>
   <entry key="spin-js.license">MIT</entry>
-  <entry key="typeaheadjs"><![CDATA[For typeahead.js (http://twitter.github.io/typeahead.js/):
-This is licensed under the MIT license]]></entry>
+  <entry key="typeaheadjs"><![CDATA[typeahead.js (http://twitter.github.io/typeahead.js/)]]></entry>
   <entry key="typeaheadjs.license">MIT</entry>
-  <entry key="x-editable-bootstrap"><![CDATA[For X-editable (http://vitalets.github.io/x-editable/):
-This is licensed under the MIT license]]></entry>
+  <entry key="x-editable-bootstrap"><![CDATA[X-editable (http://vitalets.github.io/x-editable/)]]></entry>
   <entry key="x-editable-bootstrap.license">MIT</entry>
-  <entry key="bootstrap-select"><![CDATA[For bootstrap-select (http://silviomoreto.github.io/bootstrap-select/):
-This is licensed under the MIT license]]></entry>
+  <entry key="bootstrap-select"><![CDATA[bootstrap-select (http://silviomoreto.github.io/bootstrap-select/)]]></entry>
   <entry key="bootstrap-select.license">MIT</entry>
-  <entry key="kendo-ui-core"><![CDATA[For Kendo UI (http://www.telerik.com/kendo-ui):
-This is licensed under the AL 2.0, see above.]]></entry>
-  <entry key="lodash"><![CDATA[For lodash (https://lodash.com/):
-This is licensed under the MIT license]]></entry>
+  <entry key="kendo-ui-core"><![CDATA[Kendo UI (http://www.telerik.com/kendo-ui)]]></entry>
+  <entry key="lodash"><![CDATA[lodash (https://lodash.com/)]]></entry>
   <entry key="lodash.license">MIT</entry>
-  <entry key="angular-ui-bootstrap"><![CDATA[For AngularJS UI Bootstrap (http://angular-ui.github.io/bootstrap/):
-This is licensed under the MIT license]]></entry>
+  <entry key="angular-ui-bootstrap"><![CDATA[AngularJS UI Bootstrap (http://angular-ui.github.io/bootstrap/)]]></entry>
   <entry key="angular-ui-bootstrap.license">MIT</entry>
-  <entry key="angular-ui-router"><![CDATA[For AngularJS UI Router (http://angular-ui.github.io/ui-router/site):
-This is licensed under the MIT license]]></entry>
+  <entry key="angular-ui-router"><![CDATA[AngularJS UI Router (http://angular-ui.github.io/ui-router/site)]]></entry>
   <entry key="angular-ui-router.license">MIT</entry>
-  <entry key="angular-ui-select"><![CDATA[For AngularJS UI Select (https://github.com/angular-ui/ui-select/):
-This is licensed under the MIT license]]></entry>
+  <entry key="angular-ui-select"><![CDATA[AngularJS UI Select (https://github.com/angular-ui/ui-select/)]]></entry>
   <entry key="angular-ui-select.license">MIT</entry>
-  <entry key="org.webjars.bower:angular"><![CDATA[For AngularJS (https://angular.io/):
-This is licensed under the MIT license]]></entry>
+  <entry key="org.webjars.bower:angular"><![CDATA[AngularJS (https://angular.io/)]]></entry>
   <entry key="org.webjars.bower:angular.license">MIT</entry>
-  <entry key="org.webjars.bower:FileSaver.js"><![CDATA[For FileSaver.js (http://carlos-algms.github.io/work/html5-saveas-filesaver.js/):
-This is licensed under the MIT license]]></entry>
+  <entry key="org.webjars.bower:FileSaver.js"><![CDATA[FileSaver.js (http://carlos-algms.github.io/work/html5-saveas-filesaver.js/)]]></entry>
   <entry key="org.webjars.bower:FileSaver.js.license">MIT</entry>
-  <entry key="org.webjars.bower:select2"><![CDATA[For Select2 (https://select2.github.io/):
-This is licensed under the MIT license]]></entry>
+  <entry key="org.webjars.bower:select2"><![CDATA[Select2 (https://select2.github.io/)]]></entry>
   <entry key="org.webjars.bower:select2.license">MIT</entry>
-  <entry key="org.webjars.bower:ng-password-strength"><![CDATA[For ng-password-strength (https://github.com/subarroca/ng-password-strength):
-This is licensed under the MIT license]]></entry>
+  <entry key="org.webjars.bower:ng-password-strength"><![CDATA[ng-password-strength (https://github.com/subarroca/ng-password-strength)]]></entry>
   <entry key="org.webjars.bower:ng-password-strength.license">MIT</entry>
-  <entry key="com.h2database:h2"><![CDATA[For H2 (http://www.h2database.com/):
-This is licensed under the EPL 1.0]]></entry>
+  <entry key="com.h2database:h2"><![CDATA[H2 (http://www.h2database.com/)]]></entry>
   <entry key="com.h2database:h2.license">EPL</entry>
-  <entry key="javax.servlet:jstl"><![CDATA[For JSP Standard Tag Library (https://jstl.java.net/):
-This is licensed under CDDL 1.0]]></entry>
+  <entry key="javax.servlet:jstl"><![CDATA[JSP Standard Tag Library (https://jstl.java.net/)]]></entry>
   <entry key="javax.servlet:jstl.license">CDDL</entry>
 </properties>
