@@ -133,4 +133,19 @@ Copyright (c) 2014 Salvador Subarroca subarroca@gmail.com]]></entry>
 which is dual licensed and available under a modified version of the MPL 1.1 (Mozilla Public License) or under the
 (unmodified) EPL 1.0 (Eclipse Public License).
 An original copy of the license agreement can be found at: http://www.h2database.com/html/license.html]]></entry>
+  <entry key="be.cyberelf.nanoxml:lite"><![CDATA[This product includes software developed by the NanoXML project.
+Copyright (c) 2000-2002 Marc De Scheemaecker, All Rights Reserved.]]></entry>
+  <entry key="jline:jline"><![CDATA[This product includes software developed by the Jline v2 project.
+Copyright (c) 2002-2016, the original author or authors.
+All rights reserved.]]></entry>
+  <entry key="org.hamcrest:hamcrest-core"><![CDATA[This product includes software developed by the Hamcrest project.
+Copyright (c) 2000-2015 www.hamcrest.org
+All rights reserved.]]></entry>
+  <entry key="org.jdom:jdom2"><![CDATA[This product includes software developed by the JDOM project.
+ Copyright (C) 2000-2012 Jason Hunter & Brett McLaughlin.
+ All rights reserved.]]></entry>
+  <entry key="org.picocontainer:picocontainer"><![CDATA[This product includes software developed by the PicoContainer project.
+ Copyright (C) 2003-2011 PicoContainer Committers. All rights reserved.]]></entry>
+  <entry key="org.pushing-pixels:trident"><![CDATA[This product includes software developed by the Trident project.
+ Copyright (c) 2005-2010 Trident Kirill Grouchnikov. All Rights Reserved.]]></entry>
 </properties>

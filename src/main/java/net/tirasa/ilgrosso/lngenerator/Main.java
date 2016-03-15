@@ -45,7 +45,9 @@ public final class Main {
         CDDL("CDDL 1.0"),
         EPL("EPL 1.0"),
         MIT("MIT license"),
-        CPL("CPL");
+        CPL("CPL"),
+        INDIANA("Indiana University Extreme! Lab Software License, version 1.1.1"),
+        ZLIB("zlib/libpng license");
 
         private final String label;
 
@@ -68,7 +70,8 @@ public final class Main {
 
     private static final String[] CONSOLIDATING_GROUP_IDS = new String[] {
         "net.tirasa.connid", "org.slf4j", "org.springframework.security", "org.springframework", "io.swagger",
-        "org.activiti", "com.googlecode.wicket-jquery-ui", "com.sun.xml.bind", "io.dropwizard.metrics"
+        "org.activiti", "com.googlecode.wicket-jquery-ui", "com.sun.xml.bind", "io.dropwizard.metrics",
+        "org.codehaus.izpack", "org.codehaus.plexus"
     };
 
     public static void main(final String[] args) throws IOException, URISyntaxException {
@@ -112,6 +115,7 @@ public final class Main {
                             } else if (!gav.getGroupId().startsWith("org.apache.")
                                     && !gav.getGroupId().startsWith("commons-")
                                     && !gav.getGroupId().equals("org.codehaus.groovy")
+                                    && !gav.getGroupId().equals("jakarta-regexp")
                                     && !gav.getGroupId().equals("xml-apis")) {
 
                                 if (ArrayUtils.contains(CONSOLIDATING_GROUP_IDS, gav.getGroupId())) {
