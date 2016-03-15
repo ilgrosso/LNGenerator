@@ -185,4 +185,10 @@ This is licensed under the MIT license]]></entry>
   <entry key="org.webjars.bower:ng-password-strength"><![CDATA[For ng-password-strength (https://github.com/subarroca/ng-password-strength):
 This is licensed under the MIT license]]></entry>
   <entry key="org.webjars.bower:ng-password-strength.license">MIT</entry>
+  <entry key="com.h2database:h2"><![CDATA[For H2 (http://www.h2database.com/):
+This is licensed under the EPL 1.0]]></entry>
+  <entry key="com.h2database:h2.license">EPL</entry>
+  <entry key="javax.servlet:jstl"><![CDATA[For JSP Standard Tag Library (https://jstl.java.net/):
+This is licensed under CDDL 1.0]]></entry>
+  <entry key="javax.servlet:jstl.license">CDDL</entry>
 </properties>
