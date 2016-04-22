@@ -116,7 +116,8 @@ public final class Main {
                                     && !gav.getGroupId().startsWith("commons-")
                                     && !gav.getGroupId().equals("org.codehaus.groovy")
                                     && !gav.getGroupId().equals("jakarta-regexp")
-                                    && !gav.getGroupId().equals("xml-apis")) {
+                                    && !gav.getGroupId().equals("xml-apis")
+                                    && !gav.getGroupId().equals("batik")) {
 
                                 if (ArrayUtils.contains(CONSOLIDATING_GROUP_IDS, gav.getGroupId())) {
                                     keys.add(gav.getGroupId());
