@@ -124,9 +124,17 @@ public final class Main {
                                 } else if (gav.getGroupId().startsWith("com.fasterxml.jackson")) {
                                     keys.add("com.fasterxml.jackson");
                                 } else if (gav.getGroupId().equals("org.webjars.bower")
-                                        && gav.getArtifactId().startsWith("angular-")) {
+                                        && (gav.getArtifactId().startsWith("angular-animate")
+                                        || gav.getArtifactId().startsWith("angular-cookies")
+                                        || gav.getArtifactId().startsWith("angular-resource")
+                                        || gav.getArtifactId().startsWith("angular-sanitize")
+                                        || gav.getArtifactId().startsWith("angular-treasure-overlay-spinner"))) {
 
                                     keys.add("org.webjars.bower:angular");
+                                } else if (gav.getGroupId().equals("org.webjars.bower")
+                                        && gav.getArtifactId().startsWith("angular-translate")) {
+
+                                    keys.add("org.webjars.bower:angular-translate");
                                 } else if (gav.getGroupId().startsWith("de.agilecoders")) {
                                     keys.add("wicket-bootstrap");
                                 } else if ("org.webjars".equals(gav.getGroupId())) {

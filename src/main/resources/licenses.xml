@@ -119,6 +119,8 @@
   <entry key="angular-ui-select.license">MIT</entry>
   <entry key="org.webjars.bower:angular"><![CDATA[AngularJS (https://angular.io/)]]></entry>
   <entry key="org.webjars.bower:angular.license">MIT</entry>
+  <entry key="org.webjars.bower:angular-translate"><![CDATA[Angular Translate (https://angular-translate.github.io/)]]></entry>
+  <entry key="org.webjars.bower:angular-translate.license">MIT</entry>
   <entry key="org.webjars.bower:FileSaver.js"><![CDATA[FileSaver.js (http://carlos-algms.github.io/work/html5-saveas-filesaver.js/)]]></entry>
   <entry key="org.webjars.bower:FileSaver.js.license">MIT</entry>
   <entry key="org.webjars.bower:select2"><![CDATA[Select2 (https://select2.github.io/)]]></entry>

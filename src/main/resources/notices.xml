@@ -123,6 +123,8 @@ Copyright (c) 2013-2015 The AngularUI Team, Karsten Sperling]]></entry>
 Copyright (c) 2013-2014 AngularUI]]></entry>
   <entry key="org.webjars.bower:angular"><![CDATA[This product includes software developed by the AngularJS project.
 Copyright (c) 2014-2016 Google, Inc. http://angular.io]]></entry>
+  <entry key="org.webjars.bower:angular-translate"><![CDATA[This product includes software developed by the Angular Translate project.
+Copyright (c) <2014> <pascal.precht@gmail.com>]]></entry>
   <entry key="org.webjars.bower:FileSaver.js"><![CDATA[This product includes software developed by the FileSaver.js project.
 Copyright (c) 2015 Carlos A. Gomes.]]></entry>
   <entry key="org.webjars.bower:select2"><![CDATA[This product includes software developed by the Select2 project.
