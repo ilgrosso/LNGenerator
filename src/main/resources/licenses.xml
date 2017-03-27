@@ -29,9 +29,15 @@
   <entry key="io.swagger"><![CDATA[Swagger (http://swagger.io/)]]></entry>
   <entry key="javax.annotation:javax.annotation-api"><![CDATA[javax.annotation-api (https://jcp.org/en/jsr/detail?id=250)]]></entry>
   <entry key="javax.annotation:javax.annotation-api.license">CDDL</entry>
+  <entry key="javax.jws:jsr181-api"><![CDATA[Web Services Metadata for the Java Platform (https://jcp.org/en/jsr/detail?id=181)]]></entry>
+  <entry key="javax.jws:jsr181-api.license">CDDL</entry>
+  <entry key="javax.xml.soap:javax.xml.soap-api"><![CDATA[SAAJ Standard Implementation (https://saaj.java.net/)]]></entry>
+  <entry key="javax.xml.soap:javax.xml.soap-api.license">CDDL</entry>
   <entry key="javax.validation:validation-api"><![CDATA[Bean Validation API (http://beanvalidation.org/)]]></entry>
   <entry key="javax.ws.rs:javax.ws.rs-api"><![CDATA[javax.ws.rs-api (https://jax-rs-spec.java.net/)]]></entry>
   <entry key="javax.ws.rs:javax.ws.rs-api.license">CDDL</entry>
+  <entry key="javax.xml.ws:jaxws-api"><![CDATA[javax.ws.rs-api (https://jax-ws.java.net/)]]></entry>
+  <entry key="javax.xml.ws:jaxws-api.license">CDDL</entry>
   <entry key="joda-time:joda-time"><![CDATA[Joda Time (http://www.joda.org/joda-time/)]]></entry>
   <entry key="math.geom2d:javaGeom"><![CDATA[JavaGeom (http://geom-java.sourceforge.net/)]]></entry>
   <entry key="net.sourceforge.serp:serp"><![CDATA[SERP (http://serp.sourceforge.net/)]]></entry>
@@ -98,6 +104,8 @@
   <entry key="org.ow2.asm:asm.license">BSD</entry>
   <entry key="asm:asm-all"><![CDATA[ASM (http://asm.ow2.org/)]]></entry>
   <entry key="asm:asm-all.license">BSD</entry>
+  <entry key="org.ow2.asm:asm-all"><![CDATA[ASM (http://asm.ow2.org/)]]></entry>
+  <entry key="org.ow2.asm:asm-all.license">BSD</entry>
   <entry key="org.threeten:threetenbp"><![CDATA[ThreeTen Backport (http://www.threeten.org/threetenbp/)]]></entry>
   <entry key="org.threeten:threetenbp.license">BSD</entry>
   <entry key="spin-js"><![CDATA[spin.js (http://spin.js.org/)]]></entry>
@@ -113,10 +121,10 @@
   <entry key="lodash.license">MIT</entry>
   <entry key="angular-ui-bootstrap"><![CDATA[AngularJS UI Bootstrap (http://angular-ui.github.io/bootstrap/)]]></entry>
   <entry key="angular-ui-bootstrap.license">MIT</entry>
-  <entry key="angular-ui-router"><![CDATA[AngularJS UI Router (http://angular-ui.github.io/ui-router/site)]]></entry>
-  <entry key="angular-ui-router.license">MIT</entry>
   <entry key="angular-ui-select"><![CDATA[AngularJS UI Select (https://github.com/angular-ui/ui-select/)]]></entry>
   <entry key="angular-ui-select.license">MIT</entry>
+  <entry key="org.webjars.bower:angular-ui-router"><![CDATA[AngularJS UI Router (http://angular-ui.github.io/ui-router/site)]]></entry>
+  <entry key="org.webjars.bower:angular-ui-router.license">MIT</entry>
   <entry key="org.webjars.bower:angular"><![CDATA[AngularJS (https://angular.io/)]]></entry>
   <entry key="org.webjars.bower:angular.license">MIT</entry>
   <entry key="org.webjars.bower:angular-translate"><![CDATA[Angular Translate (https://angular-translate.github.io/)]]></entry>
@@ -163,4 +171,10 @@
   <entry key="com.fasterxml.uuid:java-uuid-generator"><![CDATA[Java Uuid Generator (JUG) (http://wiki.fasterxml.com/JugHome)]]></entry>
   <entry key="jQuery-slimScroll"><![CDATA[slimScroll (http://rocha.la/jQuery-slimScroll)]]></entry>
   <entry key="jQuery-slimScroll.license">MIT</entry>
+  <entry key="org.opensaml"><![CDATA[Open SAML-Java (https://shibboleth.net/products/opensaml-java.html)]]></entry>
+  <entry key="net.shibboleth.utilities"><![CDATA[Shibboleth (https://shibboleth.net/)]]></entry>
+  <entry key="net.sf.ehcache:ehcache"><![CDATA[Ehcache (http://ehcache.org/)]]></entry>
+  <entry key="org.bouncycastle:bcprov-jdk15on"><![CDATA[Legion of the Bouncy Castle (http://www.bouncycastle.org/java.html)]]></entry>
+  <entry key="org.bouncycastle:bcprov-jdk15on.license">MIT</entry>
+  <entry key="org.cryptacular:cryptacular"><![CDATA[Cryptacular (https://github.com/vt-middleware/cryptacular)]]></entry>
 </properties>

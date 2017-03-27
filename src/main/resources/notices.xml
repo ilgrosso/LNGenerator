@@ -32,8 +32,14 @@ Copyright 2016 SmartBear Software]]></entry>
 Copyright (c) 2012-2013 Oracle and/or its affiliates. All rights reserved.]]></entry>
   <entry key="javax.validation:validation-api"><![CDATA[This product includes software developed by the Bean Validation Project (http://beanvalidation.org).
 Copyright (c) Red Hat, Inc., Emmanuel Bernard]]></entry>
+  <entry key="javax.jws:jsr181-api"><![CDATA[This product includes software developed by the Java Community Process (https://jcp.org/en/jsr/detail?id=181).
+ Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved.]]></entry>
+  <entry key="javax.xml.soap:javax.xml.soap-api"><![CDATA[This product includes software developed by the SAAJ Standard Implementation (https://saaj.java.net/).
+ Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved.]]></entry>
   <entry key="javax.ws.rs:javax.ws.rs-api"><![CDATA[This product includes software developed by the JAX-RS project.
 Copyright (c) 2014, Oracle Corporation and/or its affiliates. All rights reserved.]]></entry>
+  <entry key="javax.xml.ws:jaxws-api"><![CDATA[This product includes software developed by the JAX-WS project.
+ Copyright (c) 1997-2013 Oracle and/or its affiliates. All rights reserved.]]></entry>
   <entry key="joda-time:joda-time"><![CDATA[This product includes software developed by the Joda Time project.
 Copyright (c) 2002-2016 Joda.org. All Rights Reserved.]]></entry>
   <entry key="net.sourceforge.serp:serp"><![CDATA[This product includes software developed by the SERP Project.
@@ -155,4 +161,9 @@ All rights reserved.]]></entry>
   <entry key="com.fasterxml.uuid:java-uuid-generator"><![CDATA[This product includes software developed by the Java Uuid Generator (JUG) project.]]></entry>
   <entry key="jQuery-slimScroll"><![CDATA[This product includes software developed by the slimScroll project.
 Copyright (c) 2011 Piotr Rochala (http://rocha.la)]]></entry>
+  <entry key="org.opensaml"><![CDATA[This product includes software developed by the Shibboleth project.]]></entry>
+  <entry key="net.sf.ehcache:ehcache"><![CDATA[This product includes software developed by Terracotta. Inc.
+Ehcache source code and documentation are Copyright (c) Terracotta, Inc.]]></entry>
+  <entry key="org.bouncycastle:bcprov-jdk15on"><![CDATA[This product includes software developed by the Legion of the Bouncy Castle.
+Copyright (c) 2000-2016 The Legion of the Bouncy Castle Inc. (http://www.bouncycastle.org)]]></entry>
 </properties>

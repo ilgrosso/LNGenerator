@@ -71,7 +71,7 @@ public final class Main {
     private static final String[] CONSOLIDATING_GROUP_IDS = new String[] {
         "net.tirasa.connid", "org.slf4j", "org.springframework.security", "org.springframework", "io.swagger",
         "org.activiti", "com.googlecode.wicket-jquery-ui", "com.sun.xml.bind", "io.dropwizard.metrics",
-        "org.codehaus.izpack", "org.codehaus.plexus"
+        "org.codehaus.izpack", "org.codehaus.plexus", "org.opensaml", "net.shibboleth.utilities"
     };
 
     public static void main(final String[] args) throws IOException, URISyntaxException {
@@ -117,12 +117,17 @@ public final class Main {
                                     && !gav.getGroupId().equals("org.codehaus.groovy")
                                     && !gav.getGroupId().equals("jakarta-regexp")
                                     && !gav.getGroupId().equals("xml-apis")
+                                    && !gav.getGroupId().equals("xml-resolver")
                                     && !gav.getGroupId().equals("batik")) {
 
                                 if (ArrayUtils.contains(CONSOLIDATING_GROUP_IDS, gav.getGroupId())) {
                                     keys.add(gav.getGroupId());
+                                } else if (gav.getGroupId().startsWith("net.tirasa.connid")) {
+                                    keys.add("net.tirasa.connid");
                                 } else if (gav.getGroupId().startsWith("com.fasterxml.jackson")) {
                                     keys.add("com.fasterxml.jackson");
+                                } else if (gav.getGroupId().startsWith("javax.xml.bind")) {
+                                    keys.add("com.sun.xml.bind");
                                 } else if (gav.getGroupId().equals("org.webjars.bower")
                                         && (gav.getArtifactId().startsWith("angular-animate")
                                         || gav.getArtifactId().startsWith("angular-cookies")
