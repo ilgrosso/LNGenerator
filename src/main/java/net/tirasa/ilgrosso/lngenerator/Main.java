@@ -126,6 +126,10 @@ public final class Main {
                                     keys.add("net.tirasa.connid");
                                 } else if (gav.getGroupId().startsWith("com.fasterxml.jackson")) {
                                     keys.add("com.fasterxml.jackson");
+                                } else if (gav.getGroupId().startsWith("com.zaxxer")
+                                        && gav.getArtifactId().startsWith("HikariCP")) {
+
+                                    keys.add("com.zaxxer.HikariCP");
                                 } else if (gav.getGroupId().startsWith("javax.xml.bind")) {
                                     keys.add("com.sun.xml.bind");
                                 } else if (gav.getGroupId().equals("org.webjars.bower")
@@ -136,6 +140,8 @@ public final class Main {
                                         || gav.getArtifactId().startsWith("angular-treasure-overlay-spinner"))) {
 
                                     keys.add("org.webjars.bower:angular");
+                                } else if (gav.getGroupId().startsWith("javax.servlet.jstl")) {
+                                    keys.add("javax.servlet:jstl");
                                 } else if (gav.getGroupId().equals("org.webjars.bower")
                                         && gav.getArtifactId().startsWith("angular-translate")) {
 

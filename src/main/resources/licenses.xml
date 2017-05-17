@@ -21,6 +21,7 @@
   <entry key="aopalliance:aopalliance"><![CDATA[AOP Alliance (http://aopalliance.sourceforge.net/)]]></entry>
   <entry key="aopalliance:aopalliance.license">PUBLIC_DOMAIN</entry>
   <entry key="com.fasterxml.jackson"><![CDATA[Jackson (http://wiki.fasterxml.com/JacksonHome)]]></entry>
+  <entry key="com.zaxxer.HikariCP"><![CDATA[HikariCP (http://brettwooldridge.github.io/HikariCP/)]]></entry>
   <entry key="com.google.guava:guava"><![CDATA[Guava (https://github.com/google/guava)]]></entry>
   <entry key="com.lmax:disruptor"><![CDATA[LMAX Disruptor (https://lmax-exchange.github.io/disruptor/)]]></entry>
   <entry key="com.sun.xml.bind"><![CDATA[JAX-B (http://jaxb.java.net/)]]></entry>

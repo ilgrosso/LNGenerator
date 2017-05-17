@@ -20,6 +20,7 @@
 <properties>
   <entry key="aopalliance:aopalliance"><![CDATA[This product includes software developed by the AOP Alliance (Java/J2EE AOP standards).]]></entry>
   <entry key="com.fasterxml.jackson"><![CDATA[This product includes software developed by the Jackson project.]]></entry>
+  <entry key="com.zaxxer.HikariCP"><![CDATA[This product includes software developed by the HikariCP project.]]></entry>
   <entry key="com.google.guava:guava"><![CDATA[This product includes software developed by the Google Guava project.
 Copyright (c) 2016 The Guava Authors.]]></entry>
   <entry key="com.sun.xml.bind"><![CDATA[This product includes software developed by the JAXB project.
