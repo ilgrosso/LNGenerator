@@ -167,4 +167,6 @@ Copyright (c) 2011 Piotr Rochala (http://rocha.la)]]></entry>
 Ehcache source code and documentation are Copyright (c) Terracotta, Inc.]]></entry>
   <entry key="org.bouncycastle:bcprov-jdk15on"><![CDATA[This product includes software developed by the Legion of the Bouncy Castle.
 Copyright (c) 2000-2016 The Legion of the Bouncy Castle Inc. (http://www.bouncycastle.org)]]></entry>
+  <entry key="google-diff-match-patch"><![CDATA[This product includes software developed by the google-diff-match-patch project.
+Copyright (c) 2006 Google Inc.]]></entry>
 </properties>

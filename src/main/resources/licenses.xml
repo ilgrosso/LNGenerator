@@ -178,4 +178,5 @@
   <entry key="org.bouncycastle:bcprov-jdk15on"><![CDATA[Legion of the Bouncy Castle (http://www.bouncycastle.org/java.html)]]></entry>
   <entry key="org.bouncycastle:bcprov-jdk15on.license">MIT</entry>
   <entry key="org.cryptacular:cryptacular"><![CDATA[Cryptacular (https://github.com/vt-middleware/cryptacular)]]></entry>
+  <entry key="google-diff-match-patch"><![CDATA[google-diff-match-patch (https://code.google.com/archive/p/google-diff-match-patch/)]]></entry>
 </properties>
