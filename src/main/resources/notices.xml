@@ -169,4 +169,6 @@ Ehcache source code and documentation are Copyright (c) Terracotta, Inc.]]></ent
 Copyright (c) 2000-2016 The Legion of the Bouncy Castle Inc. (http://www.bouncycastle.org)]]></entry>
   <entry key="google-diff-match-patch"><![CDATA[This product includes software developed by the google-diff-match-patch project.
 Copyright (c) 2006 Google Inc.]]></entry>
+  <entry key="org.webjars.bower:chart.js"><![CDATA[This product includes software developed by the Chart.js project.
+Copyright (c) 2018 Chart.js Contributors]]></entry>
 </properties>

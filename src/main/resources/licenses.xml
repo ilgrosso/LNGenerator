@@ -179,4 +179,5 @@
   <entry key="org.bouncycastle:bcprov-jdk15on.license">MIT</entry>
   <entry key="org.cryptacular:cryptacular"><![CDATA[Cryptacular (https://github.com/vt-middleware/cryptacular)]]></entry>
   <entry key="google-diff-match-patch"><![CDATA[google-diff-match-patch (https://code.google.com/archive/p/google-diff-match-patch/)]]></entry>
+  <entry key="org.webjars.bower:chart.js"><![CDATA[Chart.js (http://www.chartjs.org/)]]></entry>
 </properties>
