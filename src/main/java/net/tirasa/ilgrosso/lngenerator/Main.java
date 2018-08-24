@@ -132,6 +132,12 @@ public final class Main {
                                     keys.add("com.zaxxer.HikariCP");
                                 } else if (gav.getGroupId().startsWith("javax.xml.bind")) {
                                     keys.add("com.sun.xml.bind");
+                                } else if (gav.getGroupId().startsWith("io.swagger.core.v3")) {
+                                    keys.add("io.swagger");
+                                } else if (gav.getGroupId().startsWith("com.fasterxml.woodstox")
+                                        && gav.getArtifactId().startsWith("woodstox-core")) {
+
+                                    keys.add("org.codehaus.woodstox:woodstox-core-asl");
                                 } else if (gav.getGroupId().equals("org.webjars.bower")
                                         && (gav.getArtifactId().startsWith("angular-animate")
                                         || gav.getArtifactId().startsWith("angular-cookies")
@@ -151,6 +157,8 @@ public final class Main {
                                 } else if ("org.webjars".equals(gav.getGroupId())) {
                                     if (gav.getArtifactId().startsWith("jquery-ui")) {
                                         keys.add("jquery-ui");
+                                    } else  if (gav.getArtifactId().startsWith("swagger-ui")) {
+                                        keys.add("io.swagger");
                                     } else {
                                         keys.add(gav.getArtifactId());
                                     }
