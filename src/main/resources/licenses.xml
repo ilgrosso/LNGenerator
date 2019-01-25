@@ -37,6 +37,8 @@
   <entry key="javax.validation:validation-api"><![CDATA[Bean Validation API (http://beanvalidation.org/)]]></entry>
   <entry key="javax.ws.rs:javax.ws.rs-api"><![CDATA[javax.ws.rs-api (https://jax-rs-spec.java.net/)]]></entry>
   <entry key="javax.ws.rs:javax.ws.rs-api.license">CDDL</entry>
+  <entry key="jakarta.ws.rs:jakarta.ws.rs-api"><![CDATA[Eclipse Project for JAX-RS (https://projects.eclipse.org/projects/ee4j.jaxrs)]]></entry>
+  <entry key="jakarta.ws.rs:jakarta.ws.rs-api.license">EPL</entry>
   <entry key="javax.xml.ws:jaxws-api"><![CDATA[javax.ws.rs-api (https://jax-ws.java.net/)]]></entry>
   <entry key="javax.xml.ws:jaxws-api.license">CDDL</entry>
   <entry key="joda-time:joda-time"><![CDATA[Joda Time (http://www.joda.org/joda-time/)]]></entry>
