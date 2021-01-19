@@ -21,7 +21,7 @@
   <entry key="aopalliance:aopalliance"><![CDATA[This product includes software developed by the AOP Alliance (Java/J2EE AOP standards).]]></entry>
   <entry key="com.fasterxml.jackson"><![CDATA[This product includes software developed by the Jackson project.]]></entry>
   <entry key="com.zaxxer.HikariCP"><![CDATA[This product includes software developed by the HikariCP project.]]></entry>
-  <entry key="com.google.guava:guava"><![CDATA[This product includes software developed by the Google Guava project.
+  <entry key="com.google.guava"><![CDATA[This product includes software developed by the Google Guava project.
 Copyright (c) 2016 The Guava Authors.]]></entry>
   <entry key="com.sun.xml.bind"><![CDATA[This product includes software developed by the JAXB project.
 Copyright (c) 2013-2016 The JAXB project.]]></entry>
@@ -53,6 +53,7 @@ All rights reserved.]]></entry>
 Copyright 2008-2009 Sun Microsystems, Inc. All rights reserved.
 Copyright 2011-2016 Tirasa S.r.l. All rights reserved.]]></entry>
   <entry key="org.activiti"><![CDATA[This product includes software developed by the Activiti BPM Platform project.]]></entry>
+  <entry key="org.flowable"><![CDATA[This product includes software developed by the Flowable project.]]></entry>
   <entry key="org.aspectj:aspectjweaver"><![CDATA[This product includes AspectJ (>= 1.52) software developed by the Eclipse
 Software Foundation.]]></entry>
   <entry key="org.codehaus.woodstox:stax2-api"><![CDATA[This product includes software developed by the Stax 2 Extension API Project.]]></entry>
@@ -174,4 +175,41 @@ Copyright (c) 2000-2016 The Legion of the Bouncy Castle Inc. (http://www.bouncyc
 Copyright (c) 2006 Google Inc.]]></entry>
   <entry key="org.webjars.bower:chart.js"><![CDATA[This product includes software developed by the Chart.js project.
 Copyright (c) 2018 Chart.js Contributors]]></entry>
+  <entry key="com.github.ben-manes.caffeine:caffeine"><![CDATA[This product includes software developed by the Caffeine project.
+Copyright (c) 2021 Ben Manes. All Rights Reserved.]]></entry>
+  <entry key="com.icegreen:greenmail"><![CDATA[This product includes software developed by the GreenMail project.
+Copyright (c) 2006 - 2019, Wael Chatila and GreenMail project contributors]]></entry>
+  <entry key="io.github.classgraph:classgraph"><![CDATA[This product includes software developed by the ClassGraph project.
+Copyright (c) 2020 Luke Hutchison]]></entry>
+  <entry key="jakarta.xml.bind:jakarta.xml.bind-api"><![CDATA[This product includes software developed by the Eclipse Foundation.
+Copyright (c) 2019, 2020 Eclipse Foundation. All rights reserved.]]></entry>
+  <entry key="jakarta.activation:jakarta.activation-api"><![CDATA[This product includes software developed by the Eclipse Foundation.
+Copyright (c) 2019, 2020 Eclipse Foundation. All rights reserved.]]></entry>
+  <entry key="org.liquibase:liquibase-core"><![CDATA[This product includes software developed by the Liquibase project.]]></entry>
+  <entry key="org.antlr:antlr4-runtime"><![CDATA[This product includes software developed by the ANTLR project.
+Copyright (c) 2012-2017 The ANTLR Project. All rights reserved.]]></entry>
+  <entry key="com.github.openjson:openjson"><![CDATA[This product includes software developed by the Open JSON project.]]></entry>
+  <entry key="com.google.code.gson:gson"><![CDATA[This product includes software developed by the Gson project.
+Copyright (c) 2008 Google Inc.]]></entry>
+  <entry key="org.checkerframework:checker-qual"><![CDATA[This product includes software developed by The Checker Framework.
+Copyright (c) 2004-present by the Checker Framework developers]]></entry>
+  <entry key="org.danekja:jdk-serializable-functional"><![CDATA[This product includes software developed by Serializable java.util.function Interfaces.
+Copyright (c) 2015 Jakub Danek]]></entry>
+  <entry key="org.hamcrest:hamcrest"><![CDATA[This product includes software developed by Java Hamcrest.
+Copyright (c) 2000-2015 www.hamcrest.org]]></entry>
+  <entry key="org.webjars.bower:momentjs"><![CDATA[This product includes software developed by Moment.js.
+Copyright (c) JS Foundation and other contributors]]></entry>
+  <entry key="com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer"><![CDATA[This product includes software developed by OWASP Java HTML Sanitizer.
+Copyright (c) 2011, Mike Samuel
+All rights reserved.]]></entry>
+  <entry key="com.google.errorprone:error_prone_annotations"><![CDATA[This product includes software developed by Error Prone.]]></entry>
+  <entry key="com.google.j2objc:j2objc-annotations"><![CDATA[This product includes software developed by J2ObjC: Java to Objective-C Translator and Runtime.]]></entry>
+  <entry key="com.google.javascript:closure-compiler"><![CDATA[This product includes software developed by The Closure Compiler.
+Copyright (c) 2009 The Closure Compiler Authors.]]></entry>
+  <entry key="com.google.jsinterop:jsinterop-annotations"><![CDATA[This product includes software developed by JsInterop Annotations.
+Copyright (c) 2019 Google Inc. All Rights Reserved.]]></entry>
+  <entry key="org.webjars.npm:ui-bootstrap4"><![CDATA[This product includes software developed by Native AngularJS (Angular) directives for Bootstrap 4.
+Copyright (c) 2012-2017 the AngularUI Team, https://github.com/organizations/angular-ui/teams/291112]]></entry>
+  <entry key="com.thoughtworks.qdox:qdox"><![CDATA[This product includes software developed by QDox.
+Copyright 2002-2009 Joe Walnes and QDox Project Team]]></entry>
 </properties>

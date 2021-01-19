@@ -70,8 +70,8 @@ public final class Main {
 
     private static final String[] CONSOLIDATING_GROUP_IDS = new String[] {
         "net.tirasa.connid", "org.slf4j", "org.springframework.security", "org.springframework", "io.swagger",
-        "org.activiti", "com.googlecode.wicket-jquery-ui", "com.sun.xml.bind", "io.dropwizard.metrics",
-        "org.codehaus.izpack", "org.codehaus.plexus", "org.opensaml", "net.shibboleth.utilities"
+        "org.flowable", "com.googlecode.wicket-jquery-ui", "com.sun.xml.bind", "io.dropwizard.metrics",
+        "org.codehaus.izpack", "org.codehaus.plexus", "org.opensaml", "net.shibboleth.utilities", "com.google.guava"
     };
 
     public static void main(final String[] args) throws IOException, URISyntaxException {
@@ -116,6 +116,7 @@ public final class Main {
                                     && !gav.getGroupId().startsWith("commons-")
                                     && !gav.getGroupId().equals("org.codehaus.groovy")
                                     && !gav.getGroupId().equals("jakarta-regexp")
+                                    && !gav.getGroupId().equals("bsf")
                                     && !gav.getGroupId().equals("xml-apis")
                                     && !gav.getGroupId().equals("xml-resolver")
                                     && !gav.getGroupId().equals("batik")) {
@@ -143,6 +144,7 @@ public final class Main {
                                         || gav.getArtifactId().startsWith("angular-cookies")
                                         || gav.getArtifactId().startsWith("angular-resource")
                                         || gav.getArtifactId().startsWith("angular-sanitize")
+                                        || gav.getArtifactId().startsWith("angular-aria")
                                         || gav.getArtifactId().startsWith("angular-treasure-overlay-spinner"))) {
 
                                     keys.add("org.webjars.bower:angular");
@@ -154,6 +156,10 @@ public final class Main {
                                     keys.add("org.webjars.bower:angular-translate");
                                 } else if (gav.getGroupId().startsWith("de.agilecoders")) {
                                     keys.add("wicket-bootstrap");
+                                } else if (gav.getGroupId().equals("com.google.javascript")
+                                        && gav.getArtifactId().startsWith("closure-compiler-")) {
+
+                                    keys.add("com.google.javascript:closure-compiler");
                                 } else if ("org.webjars".equals(gav.getGroupId())) {
                                     if (gav.getArtifactId().startsWith("jquery-ui")) {
                                         keys.add("jquery-ui");
