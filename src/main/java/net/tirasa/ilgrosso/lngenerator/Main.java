@@ -23,6 +23,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.Collections;
 import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.Properties;
@@ -41,9 +42,11 @@ public final class Main {
 
     private static enum LICENSE {
         PUBLIC_DOMAIN("Public Domain"),
+        CC0("CC0 1.0"),
         BSD("BSD license"),
         CDDL("CDDL 1.0"),
         EPL("EPL 1.0"),
+        EDL("EDL 1.0"),
         MIT("MIT license"),
         CPL("CPL"),
         INDIANA("Indiana University Extreme! Lab Software License, version 1.1.1"),
@@ -69,9 +72,13 @@ public final class Main {
     private static final M2GavCalculator GAV_CALCULATOR = new M2GavCalculator();
 
     private static final String[] CONSOLIDATING_GROUP_IDS = new String[] {
-        "net.tirasa.connid", "org.slf4j", "org.springframework.security", "org.springframework", "io.swagger",
+        "net.tirasa.connid", "org.slf4j", "io.swagger", "io.netty", "org.bouncycastle", "org.pac4j", "net.minidev",
         "org.flowable", "com.googlecode.wicket-jquery-ui", "com.sun.xml.bind", "io.dropwizard.metrics",
-        "org.codehaus.izpack", "org.codehaus.plexus", "org.opensaml", "net.shibboleth.utilities", "com.google.guava"
+        "org.codehaus.izpack", "org.codehaus.plexus", "org.opensaml", "net.shibboleth", "com.google.guava",
+        "org.apereo.cas", "org.aspectj", "com.github.scribejava", "cglib", "com.duosecurity", "com.yubico",
+        "org.apereo.inspektr", "org.apereo.service.persondir", "com.github.ben-manes.caffeine",
+        "com.giffing.wicket.spring.boot.starter", "com.squareup.retrofit2", "org.jetbrains.kotlin", "org.ldaptive",
+        "org.glassfish.main.javaee-api", "org.json", "org.springdoc", "org.thymeleaf"
     };
 
     public static void main(final String[] args) throws IOException, URISyntaxException {
@@ -93,16 +100,16 @@ public final class Main {
         LOG.debug("Destination Path is {}", dest.getAbsolutePath());
         LOG.warn("Existing LICENSE and NOTICE files in {} will be overwritten!", dest.getAbsolutePath());
 
-        Set<String> keys = new HashSet<>();
+        Set<String> keys = Collections.synchronizedSet(new HashSet<>());
 
         Files.walk(source.toPath()).
                 filter(Files::isRegularFile).
-                map((final Path path) -> path.getFileName().toString()).
-                filter((String path) -> path.endsWith(".jar")).
-                sorted().
-                forEach((filename) -> {
+                map(path -> path.getFileName().toString()).
+                filter(path -> path.endsWith(".jar")).
+                parallel().
+                forEach(filename -> {
                     try (Stream<Path> stream = Files.find(LOCAL_M2_REPO_PATH, 10,
-                            (path, attr) -> String.valueOf(path.getFileName().toString()).equals(filename))) {
+                            (path, attr) -> path.getFileName().toString().equals(filename))) {
 
                         String fullPath = stream.sorted().map(String::valueOf).collect(Collectors.joining("; "));
                         if (fullPath.isEmpty()) {
@@ -119,10 +126,46 @@ public final class Main {
                                     && !gav.getGroupId().equals("bsf")
                                     && !gav.getGroupId().equals("xml-apis")
                                     && !gav.getGroupId().equals("xml-resolver")
+                                    && !gav.getGroupId().equals("xerces")
+                                    && !gav.getGroupId().equals("geronimo-spec")
+                                    && !gav.getGroupId().equals("oro")
                                     && !gav.getGroupId().equals("batik")) {
 
                                 if (ArrayUtils.contains(CONSOLIDATING_GROUP_IDS, gav.getGroupId())) {
                                     keys.add(gav.getGroupId());
+                                } else if (gav.getGroupId().startsWith("org.springframework")) {
+                                    keys.add("org.springframework");
+                                } else if (gav.getGroupId().startsWith("io.projectreactor")) {
+                                    keys.add("io.projectreactor");
+                                } else if (gav.getGroupId().startsWith("com.sun.xml.bind")) {
+                                    keys.add("com.sun.xml.bind");
+                                } else if (gav.getGroupId().startsWith("com.sun.istack")
+                                        || gav.getGroupId().startsWith("org.jvnet.staxex")
+                                        || gav.getGroupId().startsWith("org.glassfish.jaxb")
+                                        || gav.getGroupId().startsWith("jakarta.xml.bind")) {
+
+                                    keys.add("ee4j.jaxb-impl");
+                                } else if (gav.getGroupId().startsWith("com.sun.activation")
+                                        || gav.getGroupId().startsWith("jakarta.activation")) {
+
+                                    keys.add("ee4j.jaf");
+                                } else if (gav.getGroupId().startsWith("jakarta.xml.soap")
+                                        || gav.getGroupId().startsWith("jakarta.jws")
+                                        || gav.getGroupId().startsWith("jakarta.xml.ws")) {
+
+                                    keys.add("ee4j.jaxws");
+                                } else if (gav.getGroupId().startsWith("jakarta.validation")) {
+                                    keys.add("javax.validation:validation-api");
+                                } else if (gav.getGroupId().startsWith("net.shibboleth")) {
+                                    keys.add("net.shibboleth");
+                                } else if (gav.getGroupId().startsWith("org.thymeleaf")) {
+                                    keys.add("org.thymeleaf");
+                                } else if (gav.getGroupId().startsWith("qdox")) {
+                                    keys.add("com.thoughtworks.qdox:qdox");
+                                } else if (gav.getGroupId().equals("org.webjars.npm")
+                                        && gav.getArtifactId().startsWith("material")) {
+
+                                    keys.add("org.webjars.npm:material");
                                 } else if (gav.getGroupId().startsWith("net.tirasa.connid")) {
                                     keys.add("net.tirasa.connid");
                                 } else if (gav.getGroupId().startsWith("com.fasterxml.jackson")) {
@@ -163,7 +206,7 @@ public final class Main {
                                 } else if ("org.webjars".equals(gav.getGroupId())) {
                                     if (gav.getArtifactId().startsWith("jquery-ui")) {
                                         keys.add("jquery-ui");
-                                    } else  if (gav.getArtifactId().startsWith("swagger-ui")) {
+                                    } else if (gav.getArtifactId().startsWith("swagger-ui")) {
                                         keys.add("io.swagger");
                                     } else {
                                         keys.add(gav.getArtifactId());
@@ -178,66 +221,62 @@ public final class Main {
                     }
                 });
 
-        final Properties licenses = new Properties();
+        Properties licenses = new Properties();
         licenses.loadFromXML(Main.class.getResourceAsStream("/licenses.xml"));
 
-        final Properties notices = new Properties();
+        Properties notices = new Properties();
         notices.loadFromXML(Main.class.getResourceAsStream("/notices.xml"));
 
-        BufferedWriter licenseWriter = Files.newBufferedWriter(
-                new File(dest, "LICENSE").toPath(), StandardOpenOption.CREATE);
-        licenseWriter.write(new String(Files.readAllBytes(
-                Paths.get(Main.class.getResource("/LICENSE.template").toURI()))));
+        try (BufferedWriter licenseWriter = Files.newBufferedWriter(
+                new File(dest, "LICENSE").toPath(), StandardOpenOption.CREATE);  BufferedWriter noticeWriter = Files.
+                newBufferedWriter(
+                        new File(dest, "NOTICE").toPath(), StandardOpenOption.CREATE)) {
 
-        BufferedWriter noticeWriter = Files.newBufferedWriter(
-                new File(dest, "NOTICE").toPath(), StandardOpenOption.CREATE);
-        noticeWriter.write(new String(Files.readAllBytes(
-                Paths.get(Main.class.getResource("/NOTICE.template").toURI()))));
+            licenseWriter.write(Files.readString(
+                    Paths.get(Main.class.getResource("/LICENSE.template").toURI())));
+            noticeWriter.write(Files.readString(
+                    Paths.get(Main.class.getResource("/NOTICE.template").toURI())));
+            EnumSet<LICENSE> outputLicenses = EnumSet.noneOf(LICENSE.class);
+            keys.stream().sorted().forEach(dependency -> {
+                if (licenses.getProperty(dependency) == null) {
+                    LOG.error("Could not find license information about {}", dependency);
+                } else {
+                    try {
+                        licenseWriter.write("\n==\n\nFor " + licenses.getProperty(dependency) + ":\n");
 
-        EnumSet<LICENSE> outputLicenses = EnumSet.noneOf(LICENSE.class);
-
-        keys.stream().sorted().forEach((final String dependency) -> {
-            if (licenses.getProperty(dependency) == null) {
-                LOG.error("Could not find license information about {}", dependency);
-            } else {
-                try {
-                    licenseWriter.write("\n==\n\nFor " + licenses.getProperty(dependency) + ":\n");
-
-                    String depLicense = licenses.getProperty(dependency + ".license");
-                    if (depLicense == null) {
-                        licenseWriter.write("This is licensed under the AL 2.0, see above.");
-                    } else {
-                        LICENSE license = LICENSE.valueOf(depLicense);
-
-                        if (license == LICENSE.PUBLIC_DOMAIN) {
-                            licenseWriter.write("This is " + license.getLabel() + ".");
+                        String depLicense = licenses.getProperty(dependency + ".license");
+                        if (depLicense == null) {
+                            licenseWriter.write("This is licensed under the AL 2.0, see above.");
                         } else {
-                            licenseWriter.write("This is licensed under the " + license.getLabel());
+                            LICENSE license = LICENSE.valueOf(depLicense);
 
-                            if (outputLicenses.contains(license)) {
-                                licenseWriter.write(", see above.");
+                            if (license == LICENSE.PUBLIC_DOMAIN) {
+                                licenseWriter.write("This is " + license.getLabel() + ".");
                             } else {
-                                outputLicenses.add(license);
+                                licenseWriter.write("This is licensed under the " + license.getLabel());
 
-                                licenseWriter.write(":\n\n");
-                                licenseWriter.write(new String(Files.readAllBytes(
-                                        Paths.get(Main.class.getResource("/LICENSE." + license.name()).toURI()))));
+                                if (outputLicenses.contains(license)) {
+                                    licenseWriter.write(", see above.");
+                                } else {
+                                    outputLicenses.add(license);
+
+                                    licenseWriter.write(":\n\n");
+                                    licenseWriter.write(new String(Files.readAllBytes(
+                                            Paths.get(Main.class.getResource("/LICENSE." + license.name()).toURI()))));
+                                }
                             }
                         }
-                    }
-                    licenseWriter.write('\n');
+                        licenseWriter.write('\n');
 
-                    if (notices.getProperty(dependency) != null) {
-                        noticeWriter.write("\n==\n\n" + notices.getProperty(dependency) + "\n");
+                        if (notices.getProperty(dependency) != null) {
+                            noticeWriter.write("\n==\n\n" + notices.getProperty(dependency) + "\n");
+                        }
+                    } catch (Exception e) {
+                        LOG.error("While dealing with {}", dependency, e);
                     }
-                } catch (Exception e) {
-                    LOG.error("While dealing with {}", dependency, e);
                 }
-            }
-        });
-
-        licenseWriter.close();
-        noticeWriter.close();
+            });
+        }
 
         LOG.debug("Execution completed successfully, look at {} for the generated LICENSE and NOTICE files",
                 dest.getAbsolutePath());
