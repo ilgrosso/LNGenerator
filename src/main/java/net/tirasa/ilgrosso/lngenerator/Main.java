@@ -61,7 +61,6 @@ public final class Main {
         public String getLabel() {
             return label;
         }
-
     }
 
     private static final String LOCAL_M2_REPO = System.getProperty("user.home").

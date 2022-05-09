@@ -377,4 +377,6 @@ Copyright (c) 2015~ Summernote Team (https://github.com/orgs/summernote/people)]
 Copyright (c) Microsoft Corporation.]]></entry>
   <entry key="org.webjars.npm:whatwg-fetch"><![CDATA[This product includes software developed by window.fetch polyfill
 Copyright (c) 2014-2016 GitHub, Inc.]]></entry>
+  <entry key="org.apereo.cas"><![CDATA[This product includes software developed by Apereo CAS
+Copyright 2022, The Apereo Foundation]]></entry>
 </properties>
