@@ -278,7 +278,7 @@ Copyright (c) Microsoft Corporation]]></entry>
 Copyright (C) 2020 Square, Inc.]]></entry>
   <entry key="com.squareup.okhttp3:okhttp"><![CDATA[This product includes software developed by OkHttp
 Copyright (c) 2022 Square, Inc.]]></entry>
-  <entry key="com.squareup.okio:okio"><![CDATA[This product includes software developed by Okio
+  <entry key="com.squareup.okio"><![CDATA[This product includes software developed by Okio
 Copyright 2013 Square, Inc.]]></entry>
   <entry key="com.squareup.retrofit:retrofit"><![CDATA[This product includes software developed by Retrofit
 Copyright 2014 Square, Inc.]]></entry>
@@ -379,4 +379,14 @@ Copyright (c) Microsoft Corporation.]]></entry>
 Copyright (c) 2014-2016 GitHub, Inc.]]></entry>
   <entry key="org.apereo.cas"><![CDATA[This product includes software developed by Apereo CAS
 Copyright 2022, The Apereo Foundation]]></entry>
+  <entry key="org.hibernate.validator:hibernate-validator"><![CDATA[This product includes software developed by Hibernate Validator
+Copyright 2022, The Hibernate Validator project]]></entry>
+  <entry key="org.jboss.logging:jboss-logging"><![CDATA[This product includes software developed by JBoss Logging
+Copyright 2020 Red Hat, Inc.]]></entry>
+  <entry key="jakarta.websocket:jakarta.websocket-api"><![CDATA[This product includes software produced and maintained by the Jakarta WebSocket project.
+All content is the property of the respective authors or their employers.]]></entry>
+  <entry key="hal-explorer"><![CDATA[This product includes software developed by HAL Explorer
+Copyright (c) 2022 Kai Toedter <kai@toedter.com>]]></entry>
+  <entry key="org.glassfish.web:el-impl"><![CDATA[This product includes software developed by Glassfish Expression Language Implementation.
+Copyright (c) 1997-2011 Oracle and/or its affiliates. All rights reserved.]]></entry>
 </properties>

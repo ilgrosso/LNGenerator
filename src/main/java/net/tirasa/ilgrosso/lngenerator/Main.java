@@ -77,7 +77,8 @@ public final class Main {
         "org.apereo.cas", "org.aspectj", "com.github.scribejava", "cglib", "com.duosecurity", "com.yubico",
         "org.apereo.inspektr", "org.apereo.service.persondir", "com.github.ben-manes.caffeine",
         "com.giffing.wicket.spring.boot.starter", "com.squareup.retrofit2", "org.jetbrains.kotlin", "org.ldaptive",
-        "org.glassfish.main.javaee-api", "org.json", "org.springdoc", "org.thymeleaf"
+        "org.glassfish.main.javaee-api", "org.json", "org.springdoc", "org.thymeleaf", "io.undertow",
+        "org.jboss.xnio", "com.squareup.okio"
     };
 
     public static void main(final String[] args) throws IOException, URISyntaxException {
@@ -138,6 +139,8 @@ public final class Main {
                                     keys.add("io.projectreactor");
                                 } else if (gav.getGroupId().startsWith("com.sun.xml.bind")) {
                                     keys.add("com.sun.xml.bind");
+                                } else if (gav.getGroupId().startsWith("org.wildfly")) {
+                                    keys.add("org.wildfly");
                                 } else if (gav.getGroupId().startsWith("com.sun.istack")
                                         || gav.getGroupId().startsWith("org.jvnet.staxex")
                                         || gav.getGroupId().startsWith("org.glassfish.jaxb")

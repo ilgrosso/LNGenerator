@@ -283,7 +283,7 @@
   <entry key="com.microsoft.alm:oauth2-useragent.license">MIT</entry>
   <entry key="com.squareup.moshi:moshi"><![CDATA[Moshi (https://square.github.io/moshi/1.x)]]></entry>
   <entry key="com.squareup.okhttp3:okhttp"><![CDATA[OkHttp (https://square.github.io/okhttp/)]]></entry>
-  <entry key="com.squareup.okio:okio"><![CDATA[Okio (https://square.github.io/okio/)]]></entry>
+  <entry key="com.squareup.okio"><![CDATA[Okio (https://square.github.io/okio/)]]></entry>
   <entry key="com.squareup.retrofit:retrofit"><![CDATA[Retrofit (https://square.github.io/retrofit/)]]></entry>
   <entry key="com.squareup.retrofit2"><![CDATA[Retrofit (https://square.github.io/retrofit/)]]></entry>
   <entry key="com.sun.mail:jakarta.mail"><![CDATA[Jakarta Mail]]></entry>
@@ -375,4 +375,18 @@
   <entry key="org.webjars.npm:tslib.license">BSD</entry>
   <entry key="org.webjars.npm:whatwg-fetch"><![CDATA[window.fetch polyfill (https://github.github.io/fetch/)]]></entry>
   <entry key="org.webjars.npm:whatwg-fetch.license">MIT</entry>
+  <entry key="hal-explorer"><![CDATA[HAL Explorer (https://github.com/toedter/hal-explorer/)]]></entry>
+  <entry key="hal-explorer.license">MIT</entry>
+  <entry key="org.hibernate.validator:hibernate-validator"><![CDATA[Hibernate Validator (https://hibernate.org/validator/)]]></entry>
+  <entry key="org.jboss.logging:jboss-logging"><![CDATA[JBoss Logging (http://www.jboss.org/)]]></entry>
+  <entry key="io.undertow"><![CDATA[Undertow (https://undertow.io/)]]></entry>
+  <entry key="jakarta.websocket:jakarta.websocket-api"><![CDATA[Jakarta WebSocket API (https://projects.eclipse.org/projects/ee4j.websocket)]]></entry>
+  <entry key="jakarta.websocket:jakarta.websocket-api.license">EPL</entry>
+  <entry key="org.jboss.threads:jboss-threads"><![CDATA[JBoss Threads (http://www.jboss.org/)]]></entry>
+  <entry key="org.jboss.xnio"><![CDATA[JBoss XNIO (http://www.jboss.org/)]]></entry>
+  <entry key="org.wildfly"><![CDATA[Wildfly (https://www.wildfly.org/)]]></entry>
+  <entry key="com.github.vladimir-bukhtoyarov:bucket4j-core"><![CDATA[Bucket4j (https://bucket4j.com/)]]></entry>
+  <entry key="nz.net.ultraq.groovy:groovy-extensions"><![CDATA[Groovy Extensions (https://github.com/ultraq/groovy-extensions/)]]></entry>
+  <entry key="org.glassfish.web:el-impl"><![CDATA[Glassfish Expression Language Implementation]]></entry>
+  <entry key="org.glassfish.web:el-impl.license">CDDL</entry>
 </properties>
