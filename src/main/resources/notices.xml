@@ -18,6 +18,91 @@
 -->
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
+  <entry key="org.glassfish.expressly:expressly"><![CDATA[This product includes software developed by Eclipse ExpressLy.
+Copyright (c) 1997, 2024 Oracle and/or its affiliates and others. All rights reserved.]]></entry>
+  <entry key="jakarta.servlet:jakarta.servlet-api"><![CDATA[This product includes software developed by the Eclipse Project for Jakarta Servlet.
+Copyright (c) 1997, 2024 Oracle and/or its affiliates and others. All rights reserved.]]></entry>
+  <entry key="jakarta.el:jakarta.el-api"><![CDATA[This product includes software developed by the Eclipse Project for Jakarta Expression Language.
+Copyright (c) 1997, 2023 Oracle and/or its affiliates and others. All rights reserved.]]></entry>
+  <entry key="jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api"><![CDATA[This product includes software developed by the Eclipse Project for Jakarta Standard Tag Library.
+Copyright (c) 1997, 2020 Oracle and/or its affiliates. All rights reserved.
+Copyright (c) 2021-2024 Contributors to the Eclipse Foundation]]></entry>
+  <entry key="jakarta.inject:jakarta.inject-api"><![CDATA[This product includes software developed by the Eclipse Project for Jakarta Contexts and Dependency Injection.
+Copyright (c) 2018,2020 Eclipse Foundation]]></entry>
+  <entry key="jakarta.jms:jakarta.jms-api"><![CDATA[This product includes software developed by the Eclipse Project for Jakarta Messaging.
+Copyright (c) 2017, 2020 Oracle and/or its affiliates. All rights reserved.
+Copyright 2021 Contributors to the Eclipse Foundation]]></entry>
+  <entry key="jakarta.mail:jakarta.mail-api"><![CDATA[This product includes software developed by the Eclipse Project for Jakarta Mail.
+Copyright (c) 1997, 2024 Oracle and/or its affiliates. All rights reserved.]]></entry>
+  <entry key="jakarta.transaction:jakarta.transaction-api"><![CDATA[This product includes software developed by the Eclipse Project for Jakarta Transactions.
+Copyright (c) 2012, 2020 Oracle and/or its affiliates. All rights reserved.]]></entry>
+  <entry key="javax.cache:cache-api"><![CDATA[This product includes software developed by JSR107 (JCache).
+Copyright (c) JSR107 Expert Group]]></entry>
+  <entry key="org.eclipse.angus:angus-activation"><![CDATA[This product includes software developed by the Eclipse Angus Project.
+Copyright (c) 1997, 2024 Oracle and/or its affiliates. All rights reserved.]]></entry>
+  <entry key="org.eclipse.angus:angus-mail"><![CDATA[This product includes software developed by the Eclipse Angus Project.
+Copyright (c) 1997, 2024 Oracle and/or its affiliates. All rights reserved.]]></entry>
+  <entry key="org.eclipse.angus:jakarta.mail"><![CDATA[This product includes software developed by the Eclipse Angus Project.
+Copyright (c) 1997, 2024 Oracle and/or its affiliates. All rights reserved.]]></entry>
+  <entry key="com.github.luben:zstd-jni"><![CDATA[This product includes software developed by Zstd-jni: JNI bindings to Zstd Library.
+Copyright (c) 2015-present, Luben Karavelov/ All rights reserved.]]></entry>
+  <entry key="org.scala-lang"><![CDATA[This product includes software developed by The Scala programming language.
+Copyright (c) 2002-2025 EPFL
+Copyright (c) 2011-2025 Lightbend, Inc. dba Akka]]></entry>
+  <entry key="com.thoughtworks.paranamer:paranamer"><![CDATA[This product includes software developed by Method Parameter Name Access for Java.
+Portions copyright (c) 2006-2018 Paul Hammant & ThoughtWorks Inc
+Portions copyright (c) 2000-2007 INRIA, France Telecom
+All rights reserved.]]></entry>
+  <entry key="net.sf.jopt-simple:jopt-simple"><![CDATA[This product includes software developed by JOpt Simple.
+Copyright (c) 2004-2021 Paul R. Holser, Jr.]]></entry>
+  <entry key="com.typesafe.scala-logging:scala-logging_2.13"><![CDATA[This product includes software developed by Scala Logging.
+Copyright 2014-2021 Lightbend, Inc.]]></entry>
+  <entry key="com.yammer.metrics:metrics-core"><![CDATA[This product includes software developed by Yammer Metrics.
+Copyright (c) 2010-2013 Coda Hale, Yammer.com]]></entry>
+  <entry key="io.micrometer"><![CDATA[This product includes software developed by Micrometer Application Metrics.
+Copyright (c) 2017-Present VMware, Inc. All Rights Reserved.]]></entry>
+  <entry key="net.sourceforge.argparse4j:argparse4j"><![CDATA[This product includes software developed by Argparse4j.
+Copyright (C) 2011-2021 The contributors: https://github.com/argparse4j/argparse4j/graphs/contributors]]></entry>
+  <entry key="org.lz4:lz4-java"><![CDATA[This product includes software developed by LZ4 compression for Java.
+Copyright 2020 Adrien Grand and the lz4-java contributors.]]></entry>
+  <entry key="org.pcollections:pcollections"><![CDATA[This product includes software developed by PCollections.
+Copyright 2008-2011, 2014-2020, 2022 Harold Cooper, gil cattaneo, Gleb Frank,
+Günther Grill, Ilya Gorbunov, Jirka Kremser, Jochen Theodorou, Johnny Lim,
+Liam Miller, Mark Perry, Matei Dragu, Mike Klein, Oleg Osipenko, Ran Ari-Gur,
+Shantanu Kumar, and Valeriy Vyrva.]]></entry>
+  <entry key="io.zonky.test"><![CDATA[This product includes software developed by Embedded Postgres.
+Copyright (C) 2017-2024 OpenTable, Inc]]></entry>
+  <entry key="net.tirasa.flowable-leftovers:flowable-json-converter"><![CDATA[This product includes software developed by Flowable Leftovers.
+Copyright 2023 Tirasa
+Copyright 2017 Flowable]]></entry>
+  <entry key="org.postgresql:postgresql"><![CDATA[This product includes software developed by Postgresql JDBC Driver.
+Copyright (c) 1997, PostgreSQL Global Development Group
+All rights reserved.]]></entry>
+  <entry key="org.osgi"><![CDATA[This product includes software developed by OSGi.
+Copyright (c) Eclipse Foundation. All rights reserved.]]></entry>
+  <entry key="org.osgi"><![CDATA[This product includes software developed by Okta.
+Copyright 2017 Okta]]></entry>
+  <entry key="io.jsonwebtoken"><![CDATA[This product includes software developed by jsonwebtoken.io.
+Copyright (C) 2014-2023 jsonwebtoken.io]]></entry>
+  <entry key="com.bucket4j:bucket4j-core"><![CDATA[This product includes software developed by Bucket4j.
+Copyright 2015-2024 Vladimir Bukhtoyarov]]></entry>
+  <entry key="com.esotericsoftware:kryo"><![CDATA[This product includes software developed by Esoteric Software.
+Copyright (c) 2008-2023, Nathan Sweet All rights reserved.]]></entry>
+  <entry key="com.esotericsoftware:minlog"><![CDATA[This product includes software developed by Esoteric Software.
+Copyright (c) 2008-2023, Nathan Sweet All rights reserved.]]></entry>
+  <entry key="com.esotericsoftware:reflectasm"><![CDATA[This product includes software developed by Esoteric Software.
+Copyright (c) 2008-2023, Nathan Sweet All rights reserved.]]></entry>
+  <entry key="com.microsoft.azure:msal4j"><![CDATA[This product includes software developed by Microsoft Authentication Library (MSAL) for Java.
+Copyright (c) Microsoft Corporation. All rights reserved.]]></entry>
+  <entry key="com.samskivert:jmustache"><![CDATA[This product includes software developed by Java implementation of the Mustache template language.
+Copyright (c) 2010, Michael Bayne
+All rights reserved.]]></entry>
+  <entry key="com.sun.xml.ws:jaxws-rt"><![CDATA[This product includes software developed by JAX-WS RI Runtime (jaxws-rt).
+Copyright (c) 2018, 2024 Oracle and/or its affiliates. All rights reserved.]]></entry>
+  <entry key="net.jodah:typetools"><![CDATA[This product includes software developed by TypeTools.
+Copyright Jonathan Halterman and friends.]]></entry>
+  <entry key="org.tukaani:xz"><![CDATA[This product includes software developed by XZ for Java.
+Copyright (C) The XZ for Java authors and contributors]]></entry>
   <entry key="aopalliance:aopalliance"><![CDATA[This product includes software developed by the AOP Alliance (Java/J2EE AOP standards).]]></entry>
   <entry key="com.fasterxml.jackson"><![CDATA[This product includes software developed by the Jackson project.]]></entry>
   <entry key="com.zaxxer.HikariCP"><![CDATA[This product includes software developed by the HikariCP project.]]></entry>
@@ -105,9 +190,9 @@ Copyright 2012-2013 Sebastien Briquet]]></entry>
 Copyright 2014 Klaus Hartl]]></entry>
   <entry key="jquerypp"><![CDATA[This product includes software developed by the jQuery++ project.
 Copyright (C) 2012 Bitovi]]></entry>
-  <entry key="org.webjars.npm:moment"><![CDATA[This product includes software developed by the Moment.js project.
+  <entry key="moment"><![CDATA[This product includes software developed by the Moment.js project.
 Copyright (c) 2011-2016 Tim Wood, Iskren Chernev, Moment.js contributors]]></entry>
-  <entry key="org.webjars.npm:moment-jdateformatparser"><![CDATA[This product includes software developed by the moment-jdateformatparser project.
+  <entry key="moment-jdateformatparser"><![CDATA[This product includes software developed by the moment-jdateformatparser project.
 Copyright (c) 2013 MadMG]]></entry>
   <entry key="org.ow2.asm:asm"><![CDATA[This product includes software developed by the ASM project.
 Copyright (c) 2000-2011 INRIA, France Telecom
@@ -175,6 +260,8 @@ Copyright (c) 2000-2016 The Legion of the Bouncy Castle Inc. (http://www.bouncyc
 Copyright (c) 2006 Google Inc.]]></entry>
   <entry key="org.webjars.bower:chart.js"><![CDATA[This product includes software developed by the Chart.js project.
 Copyright (c) 2018 Chart.js Contributors]]></entry>
+  <entry key="chartjs"><![CDATA[This product includes software developed by the Chart.js project.
+Copyright (c) 2018 Chart.js Contributors]]></entry>
   <entry key="com.github.ben-manes.caffeine"><![CDATA[This product includes software developed by the Caffeine project.
 Copyright (c) 2021 Ben Manes. All Rights Reserved.]]></entry>
   <entry key="com.icegreen:greenmail"><![CDATA[This product includes software developed by the GreenMail project.
@@ -208,7 +295,7 @@ All rights reserved.]]></entry>
 Copyright (c) 2009 The Closure Compiler Authors.]]></entry>
   <entry key="com.google.jsinterop:jsinterop-annotations"><![CDATA[This product includes software developed by JsInterop Annotations.
 Copyright (c) 2019 Google Inc. All Rights Reserved.]]></entry>
-  <entry key="org.webjars.npm:ui-bootstrap4"><![CDATA[This product includes software developed by Native AngularJS (Angular) directives for Bootstrap 4.
+  <entry key="ui-bootstrap4"><![CDATA[This product includes software developed by Native AngularJS (Angular) directives for Bootstrap 4.
 Copyright (c) 2012-2017 the AngularUI Team, https://github.com/organizations/angular-ui/teams/291112]]></entry>
   <entry key="com.thoughtworks.qdox:qdox"><![CDATA[This product includes software developed by QDox.
 Copyright 2002-2009 Joe Walnes and QDox Project Team]]></entry>
@@ -232,13 +319,13 @@ All content is the property of the respective authors or their employers.]]></en
 All content is the property of the respective authors or their employers.]]></entry>
   <entry key="com.unboundid:unboundid-ldapsdk"><![CDATA[This product includes software developed by UnboundID LDAP SDK for Java
 Copyright 2007-2022 Ping Identity Corporation]]></entry>
-  <entry key="io.micrometer:micrometer-core"><![CDATA[This product includes software developed by Micrometer Application Metrics
-Copyright (c) 2017-Present VMware, Inc. All Rights Reserved.]]></entry>
   <entry key="org.ldaptive"><![CDATA[This product includes software developed by Ldaptive Java Library
 Copyright (C) 2003-2021 Virginia Tech. All Rights Reserved.]]></entry>
   <entry key="org.jsoup:jsoup"><![CDATA[This product includes software developed by jsoup
 Copyright (c) 2009-2022 Jonathan Hedley]]></entry>
   <entry key="org.jasig.cas.client:cas-client-core"><![CDATA[This product includes software developed by Java Apereo CAS Client
+Copyright (c) 2007, JA-SIG, Inc.]]></entry>
+  <entry key="org.apereo.cas.client"><![CDATA[This product includes software developed by Java Apereo CAS Client
 Copyright (c) 2007, JA-SIG, Inc.]]></entry>
   <entry key="org.gaul:modernizer-maven-annotations"><![CDATA[This product includes software developed by Modernizer Maven Plugin
 Copyright 2014-2022 Andrew Gaul <andrew@gaul.org>]]></entry>
@@ -276,7 +363,7 @@ Copyright (C) 2015 Machinery For Change, Inc.]]></entry>
 Copyright (c) Microsoft Corporation]]></entry>
   <entry key="com.squareup.moshi:moshi"><![CDATA[This product includes software developed by Moshi
 Copyright (C) 2020 Square, Inc.]]></entry>
-  <entry key="com.squareup.okhttp3:okhttp"><![CDATA[This product includes software developed by OkHttp
+  <entry key="com.squareup.okhttp3"><![CDATA[This product includes software developed by OkHttp
 Copyright (c) 2022 Square, Inc.]]></entry>
   <entry key="com.squareup.okio"><![CDATA[This product includes software developed by Okio
 Copyright 2013 Square, Inc.]]></entry>
@@ -357,25 +444,27 @@ Copyright (c) 2013 James Ward]]></entry>
 Copyright (c) 1998-2004, Drew Davidson and Luke Blanshard]]></entry>
   <entry key="org.webjars.bowergithub.dropbox:zxcvbn"><![CDATA[This product includes software developed by zxcvbn
 Copyright (c) 2012-2016 Dan Wheeler and Dropbox, Inc.]]></entry>
-  <entry key="org.webjars.npm:material"><![CDATA[This product includes software developed by Material Components for the web
+  <entry key="zxcvbn"><![CDATA[This product includes software developed by zxcvbn
+Copyright (c) 2012-2016 Dan Wheeler and Dropbox, Inc.]]></entry>
+  <entry key="material"><![CDATA[This product includes software developed by Material Components for the web
 Copyright 2018 Google Inc.]]></entry>
-  <entry key="org.webjars.npm:balanced-match"><![CDATA[This product includes software developed by balanced-match
+  <entry key="balanced-match"><![CDATA[This product includes software developed by balanced-match
 Copyright (c) 2013 Julian Gruber <julian@juliangruber.com>]]></entry>
-  <entry key="org.webjars.npm:base64-js"><![CDATA[This product includes software developed by base64-js
+  <entry key="base64-js"><![CDATA[This product includes software developed by base64-js
 Copyright (c) 2014 Jameson Little]]></entry>
-  <entry key="org.webjars.npm:css-vars-ponyfill"><![CDATA[This product includes software developed by css-vars-ponyfill
+  <entry key="css-vars-ponyfill"><![CDATA[This product includes software developed by css-vars-ponyfill
 Copyright (c) 2018 John Hildenbiddle]]></entry>
-  <entry key="org.webjars.npm:get-css-data"><![CDATA[This product includes software developed by get-css-data
+  <entry key="get-css-data"><![CDATA[This product includes software developed by get-css-data
 Copyright (c) 2018 John Hildenbiddle]]></entry>
-  <entry key="org.webjars.npm:inputmask"><![CDATA[This product includes software developed by Inputmask
+  <entry key="inputmask"><![CDATA[This product includes software developed by Inputmask
 Copyright (c) 2010 - 2018 Robin Herbots]]></entry>
-  <entry key="org.webjars.npm:normalize.css"><![CDATA[This product includes software developed by normalize.css
+  <entry key="normalize.css"><![CDATA[This product includes software developed by normalize.css
 Copyright © Nicolas Gallagher and Jonathan Neal]]></entry>
-  <entry key="org.webjars.npm:summernote"><![CDATA[This product includes software developed by Summernote
+  <entry key="summernote"><![CDATA[This product includes software developed by Summernote
 Copyright (c) 2015~ Summernote Team (https://github.com/orgs/summernote/people)]]></entry>
-  <entry key="org.webjars.npm:tslib"><![CDATA[This product includes software developed by tslib
+  <entry key="tslib"><![CDATA[This product includes software developed by tslib
 Copyright (c) Microsoft Corporation.]]></entry>
-  <entry key="org.webjars.npm:whatwg-fetch"><![CDATA[This product includes software developed by window.fetch polyfill
+  <entry key="whatwg-fetch"><![CDATA[This product includes software developed by window.fetch polyfill
 Copyright (c) 2014-2016 GitHub, Inc.]]></entry>
   <entry key="org.apereo.cas"><![CDATA[This product includes software developed by Apereo CAS
 Copyright 2022, The Apereo Foundation]]></entry>
@@ -389,4 +478,34 @@ All content is the property of the respective authors or their employers.]]></en
 Copyright (c) 2022 Kai Toedter <kai@toedter.com>]]></entry>
   <entry key="org.glassfish.web:el-impl"><![CDATA[This product includes software developed by Glassfish Expression Language Implementation.
 Copyright (c) 1997-2011 Oracle and/or its affiliates. All rights reserved.]]></entry>
+  <entry key="bootstrap5-toggle"><![CDATA[This product includes software developed by bootstrap5-toggle
+Copyright (c) 2011-2014 Min Hur, The New York Times Company
+Copyright (c) 2018-2019 Brent Ely
+Copyright (c) 2022 Pablo Alcaraz Martínez]]></entry>
+  <entry key="define-data-property"><![CDATA[This product includes software developed by define-data-property
+Copyright (c) 2023 Jordan Harband]]></entry>
+  <entry key="define-properties"><![CDATA[This product includes software developed by define-properties
+Copyright (C) 2015 Jordan Harband]]></entry>
+  <entry key="eonasdan__tempus-dominus"><![CDATA[This product includes software developed by eonasdan__tempus-dominus
+Copyright (c) 2021 Jonathan Peterson (@Eonasdan)]]></entry>
+  <entry key="es-define-property"><![CDATA[This product includes software developed by es-define-property
+Copyright (c) 2024 Jordan Harband]]></entry>
+  <entry key="es-errors"><![CDATA[This product includes software developed by es-errors
+Copyright (c) 2024 Jordan Harband]]></entry>
+  <entry key="globalthis"><![CDATA[This product includes software developed by globalThis
+Copyright (c) 2016 Jordan Harband]]></entry>
+  <entry key="gopd"><![CDATA[This product includes software developed by gopd
+Copyright (c) 2022 Jordan Harband]]></entry>
+  <entry key="has-property-descriptors"><![CDATA[This product includes software developed by has-property-descriptors
+Copyright (c) 2022 Inspect JS]]></entry>
+  <entry key="inherits"><![CDATA[This product includes software developed by inherits
+Copyright (c) 2011-2023 Isaac Z. Schlueter]]></entry>
+  <entry key="js-cookie"><![CDATA[This product includes software developed by js-cookie
+Copyright (c) 2018 Copyright 2018 Klaus Hartl, Fagner Brack, GitHub Contributors]]></entry>
+  <entry key="murmurhash-js"><![CDATA[This product includes software developed by murmurhash-js
+Copyright (c) 2011 Gary Court]]></entry>
+  <entry key="object-keys"><![CDATA[This product includes software developed by object-keys
+Copyright (C) 2013 Jordan Harband]]></entry>
+  <entry key="popperjs__core"><![CDATA[This product includes software developed by floating-ui
+Copyright (c) 2021 Floating UI contributors]]></entry>
 </properties>

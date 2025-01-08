@@ -26,9 +26,9 @@ import java.nio.file.StandardOpenOption;
 import java.util.Collections;
 import java.util.EnumSet;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Properties;
 import java.util.Set;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.maven.index.artifact.Gav;
@@ -78,7 +78,8 @@ public final class Main {
         "org.apereo.inspektr", "org.apereo.service.persondir", "com.github.ben-manes.caffeine",
         "com.giffing.wicket.spring.boot.starter", "com.squareup.retrofit2", "org.jetbrains.kotlin", "org.ldaptive",
         "org.glassfish.main.javaee-api", "org.json", "org.springdoc", "org.thymeleaf", "io.undertow",
-        "org.jboss.xnio", "com.squareup.okio"
+        "org.jboss.xnio", "com.squareup.okio", "net.java.dev.jna", "org.scala-lang", "io.micrometer", "io.zonky.test",
+        "org.apereo.cas.client", "com.okta", "org.osgi", "io.jsonwebtoken", "com.squareup.okhttp3"
     };
 
     public static void main(final String[] args) throws IOException, URISyntaxException {
@@ -111,11 +112,14 @@ public final class Main {
                     try (Stream<Path> stream = Files.find(LOCAL_M2_REPO_PATH, 10,
                             (path, attr) -> path.getFileName().toString().equals(filename))) {
 
-                        String fullPath = stream.sorted().map(String::valueOf).collect(Collectors.joining("; "));
-                        if (fullPath.isEmpty()) {
+                        List<String> fullPaths = stream.sorted().map(String::valueOf).toList();
+                        if (fullPaths.isEmpty()) {
                             LOG.warn("Could not find {} in the local Maven repo", filename);
                         } else {
-                            String path = fullPath.substring(LOCAL_M2_REPO.length() + 1);
+                            if (fullPaths.size() > 1) {
+                                LOG.warn("Multiple matches found for {}: {}", filename, fullPaths);
+                            }
+                            String path = fullPaths.get(0).substring(LOCAL_M2_REPO.length() + 1);
                             Gav gav = GAV_CALCULATOR.pathToGav(path);
                             if (gav == null) {
                                 LOG.error("Invalid Maven path: {}", path);
@@ -167,7 +171,7 @@ public final class Main {
                                 } else if (gav.getGroupId().equals("org.webjars.npm")
                                         && gav.getArtifactId().startsWith("material")) {
 
-                                    keys.add("org.webjars.npm:material");
+                                    keys.add("material");
                                 } else if (gav.getGroupId().startsWith("net.tirasa.connid")) {
                                     keys.add("net.tirasa.connid");
                                 } else if (gav.getGroupId().startsWith("com.fasterxml.jackson")) {
@@ -213,6 +217,16 @@ public final class Main {
                                     } else {
                                         keys.add(gav.getArtifactId());
                                     }
+                                } else if ("org.webjars.npm".equals(gav.getGroupId())) {
+                                    keys.add(gav.getArtifactId());
+                                } else if ("org.scala-lang.modules".equals(gav.getGroupId())) {
+                                    keys.add("org.scala-lang");
+                                } else if ("io.zonky.test.postgres".equals(gav.getGroupId())) {
+                                    keys.add("io.zonky.test");
+                                } else if (gav.getGroupId().startsWith("com.okta")) {
+                                    keys.add("com.okta");
+                                } else if ("com.sun.xml.stream.buffer".equals(gav.getGroupId())) {
+                                    keys.add("com.sun.xml.messaging.saaj:saaj-impl");
                                 } else {
                                     keys.add(gav.getGroupId() + ":" + gav.getArtifactId());
                                 }
@@ -230,8 +244,8 @@ public final class Main {
         notices.loadFromXML(Main.class.getResourceAsStream("/notices.xml"));
 
         try (BufferedWriter licenseWriter = Files.newBufferedWriter(
-                new File(dest, "LICENSE").toPath(), StandardOpenOption.CREATE);  BufferedWriter noticeWriter = Files.
-                newBufferedWriter(
+                new File(dest, "LICENSE").toPath(), StandardOpenOption.CREATE);
+                BufferedWriter noticeWriter = Files.newBufferedWriter(
                         new File(dest, "NOTICE").toPath(), StandardOpenOption.CREATE)) {
 
             licenseWriter.write(Files.readString(
