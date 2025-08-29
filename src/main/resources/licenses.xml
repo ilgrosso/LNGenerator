@@ -248,7 +248,7 @@
   <entry key="jQuery-slimScroll.license">MIT</entry>
   <entry key="org.opensaml"><![CDATA[Open SAML-Java (https://shibboleth.net/products/opensaml-java.html)]]></entry>
   <entry key="net.shibboleth"><![CDATA[Shibboleth (https://shibboleth.net/)]]></entry>
-  <entry key="net.sf.ehcache:ehcache"><![CDATA[Ehcache (http://ehcache.org/)]]></entry>
+  <entry key="org.ehcache"><![CDATA[Ehcache (http://ehcache.org/)]]></entry>
   <entry key="org.bouncycastle"><![CDATA[Legion of the Bouncy Castle (http://www.bouncycastle.org/java.html)]]></entry>
   <entry key="org.bouncycastle.license">MIT</entry>
   <entry key="org.cryptacular:cryptacular"><![CDATA[Cryptacular (https://github.com/vt-middleware/cryptacular)]]></entry>
@@ -423,6 +423,8 @@
   <entry key="org.wicketstuff:wicketstuff-editable-grid"><![CDATA[WicketStuff (https://wicketstuff.org/)]]></entry>
   <entry key="zxcvbn"><![CDATA[zxcvbn (https://github.com/dropbox/zxcvbn)]]></entry>
   <entry key="zxcvbn.license">MIT</entry>
+  <entry key="org.webjars.bowergithub.dropbox:zxcvbn"><![CDATA[zxcvbn (https://github.com/dropbox/zxcvbn)]]></entry>
+  <entry key="org.webjars.bowergithub.dropbox:zxcvbn.license">MIT</entry>
   <entry key="material"><![CDATA[Material Components for the web (https://github.com/material-components/material-components-web)]]></entry>
   <entry key="material.license">MIT</entry>
   <entry key="org.springmodules:spring-modules-cache"><![CDATA[spring-modules-cache]]></entry>
@@ -490,4 +492,28 @@
   <entry key="object-keys.license">MIT</entry>
   <entry key="popperjs__core"><![CDATA[floating-ui (https://github.com/floating-ui/floating-ui)]]></entry>
   <entry key="popperjs__core.license">MIT</entry>
+  <entry key="net.tirasa:groovy-security-sandbox"><![CDATA[Groovy Security Sandbox (https://github.com/Tirasa/groovy-security-sandbox)]]></entry>
+  <entry key="net.tirasa:groovy-security-sandbox.license">MIT</entry>  
+  <entry key="org.craftercms:groovy-sandbox"><![CDATA[groovy-sandbox (https://github.com/craftercms/groovy-sandbox)]]></entry>
+  <entry key="org.craftercms:groovy-sandbox.license">MIT</entry>
+  <entry key="software.amazon.awssdk"><![CDATA[AWS SDK for Java (https://aws.amazon.com/sdkforjava)]]></entry>
+  <entry key="software.amazon.eventstream:eventstream"><![CDATA[AWS EventStream for Java (https://github.com/awslabs/aws-eventstream-java)]]></entry>
+  <entry key="io.prometheus"><![CDATA[Prometheus Java Metrics Library (http://prometheus.github.io/client_java/)]]></entry>
+  <entry key="com.netflix.spectator"><![CDATA[Spectator (https://github.com/Netflix/spectator)]]></entry>
+  <entry key="com.rabbitmq:amqp-client"><![CDATA[RabbitMQ Java Client (https://www.rabbitmq.com/java-client.html)]]></entry>
+  <entry key="com.signalfx.public:signalfx-java"><![CDATA[SignalFx client libraries (https://github.com/signalfx/signalfx-java)]]></entry>
+  <entry key="com.tdunning:t-digest"><![CDATA[t-digest (https://github.com/tdunning/t-digest)]]></entry>
+  <entry key="com.wavefront:wavefront-sdk-java"><![CDATA[Wavefront's Java SDK (https://github.com/wavefrontHQ/wavefront-sdk-java)]]></entry>
+  <entry key="info.ganglia.gmetric4j:gmetric4j"><![CDATA[gmetric4j (https://github.com/ganglia/gmetric4j)]]></entry>
+  <entry key="info.ganglia.gmetric4j:gmetric4j.license">BSD</entry>
+  <entry key="io.opentelemetry.proto:opentelemetry-proto"><![CDATA[Java Bindings for the OpenTelemetry Protocol (OTLP) (https://github.com/open-telemetry/opentelemetry-proto-java)]]></entry>
+  <entry key="org.jspecify:jspecify"><![CDATA[JSpecify (https://jspecify.dev/)]]></entry>
+  <entry key="sweetalert2"><![CDATA[sweetalert2 (https://github.com/sweetalert2/sweetalert2)]]></entry>
+  <entry key="sweetalert2.license">MIT</entry>  
+  <entry key="ua-parser-js"><![CDATA[UAParser.js (https://github.com/faisalman/ua-parser-js)]]></entry>
+  <entry key="ua-parser-js.license">MIT</entry>  
+  <entry key="webjars-locator-lite"><![CDATA[webjars-locator-lite (https://github.com/webjars/webjars-locator-lite/)]]></entry>
+  <entry key="webjars-locator-lite.license">MIT</entry>  
+  <entry key="com.microsoft.azure:adal4j"><![CDATA[Microsoft Azure Active Directory Authentication Library (ADAL) for Java (https://github.com/AzureAD/azure-activedirectory-library-for-java)]]></entry>
+  <entry key="com.microsoft.azure:adal4j.license">MIT</entry>  
 </properties>

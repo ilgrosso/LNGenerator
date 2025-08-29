@@ -252,7 +252,7 @@ All rights reserved.]]></entry>
   <entry key="jQuery-slimScroll"><![CDATA[This product includes software developed by the slimScroll project.
 Copyright (c) 2011 Piotr Rochala (http://rocha.la)]]></entry>
   <entry key="org.opensaml"><![CDATA[This product includes software developed by the Shibboleth project.]]></entry>
-  <entry key="net.sf.ehcache:ehcache"><![CDATA[This product includes software developed by Terracotta. Inc.
+  <entry key="org.ehcache"><![CDATA[This product includes software developed by Terracotta. Inc.
 Ehcache source code and documentation are Copyright (c) Terracotta, Inc.]]></entry>
   <entry key="org.bouncycastle"><![CDATA[This product includes software developed by the Legion of the Bouncy Castle.
 Copyright (c) 2000-2016 The Legion of the Bouncy Castle Inc. (http://www.bouncycastle.org)]]></entry>
@@ -508,4 +508,40 @@ Copyright (c) 2011 Gary Court]]></entry>
 Copyright (C) 2013 Jordan Harband]]></entry>
   <entry key="popperjs__core"><![CDATA[This product includes software developed by floating-ui
 Copyright (c) 2021 Floating UI contributors]]></entry>
+  <entry key="net.tirasa:groovy-security-sandbox"><![CDATA[This product includes software developed by Groovy Security Sandbox
+Copyright (c) 2012-2020 Kohsuke Kawaguchi, CloudBees, Inc., other contributors
+Copyright (c) 2025 Tirasa]]></entry>
+  <entry key="org.craftercms:groovy-sandbox"><![CDATA[This product includes software developed by groovy-sandbox
+Copyright (c) 2012-2020 Kohsuke Kawaguchi, CloudBees, Inc., other contributors]]></entry>
+  <entry key="software.amazon.awssdk"><![CDATA[This product includes software developed by AWS SDK for Java
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.]]></entry>
+  <entry key="software.amazon.eventstream:eventstream"><![CDATA[This product includes software developed by AWS EventStream for Java
+Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.]]></entry>
+  <entry key="io.prometheus"><![CDATA[This product includes software developed by Prometheus Java Metrics Library
+Copyright 2012-2015 The Prometheus Authors]]></entry>
+  <entry key="com.netflix.spectator"><![CDATA[This product includes software developed by Spectator
+Copyright Netflix. All Rights Reserved.]]></entry>
+  <entry key="com.rabbitmq:amqp-client"><![CDATA[This product includes software developed by RabbitMQ Java Client
+Copyright (c) 2007-Present Pivotal Software, Inc.  All rights reserved.]]></entry>
+  <entry key="com.signalfx.public:signalfx-java"><![CDATA[This product includes software developed by SignalFx client libraries
+Copyright © 2014-2023 SignalFx | Splunk]]></entry>
+  <entry key="com.tdunning:t-digest"><![CDATA[This product includes software developed by t-digest
+The code for the t-digest was originally authored by Ted Dunning]]></entry>
+  <entry key="com.wavefront:wavefront-sdk-java"><![CDATA[This product includes software developed by Wavefront's Java SDK
+Copyright (c) 2017-Present VMware, Inc. All Rights Reserved.]]></entry>
+  <entry key="info.ganglia.gmetric4j:gmetric4j"><![CDATA[This product includes software developed by gmetric4j
+Copyright (C) 2010-2015 Daniel Pocock <daniel@pocock.com.au>
+Copyright (c) 2008-2011 Jasper Humphrey <jasper521@gmail.com>]]></entry>
+  <entry key="io.opentelemetry.proto:opentelemetry-proto"><![CDATA[This product includes software developed by Java Bindings for the OpenTelemetry Protocol (OTLP)
+Copyright The OpenTelemetry Authors]]></entry>
+  <entry key="org.jspecify:jspecify"><![CDATA[This product includes software developed by JSpecify
+Copyright 2022 The JSpecify Authors.]]></entry>
+  <entry key="sweetalert2"><![CDATA[This product includes software developed by sweetalert2
+Copyright (c) 2014 Tristan Edwards & Limon Monte]]></entry>
+  <entry key="ua-parser-js"><![CDATA[This product includes software developed by UAParser.js
+Copyright (c) 2012-2025 Faisal Salman <f@faisalman.com>]]></entry>
+  <entry key="webjars-locator-lite"><![CDATA[This product includes software developed by webjars-locator-lite
+Copyright (c) 2013 James Ward]]></entry>
+  <entry key="com.microsoft.azure:adal4j"><![CDATA[This product includes software developed by Microsoft Azure Active Directory Authentication Library (ADAL) for Java
+Copyright (c) Microsoft Corporation. All rights reserved.]]></entry>
 </properties>

@@ -79,7 +79,8 @@ public final class Main {
         "com.giffing.wicket.spring.boot.starter", "com.squareup.retrofit2", "org.jetbrains.kotlin", "org.ldaptive",
         "org.glassfish.main.javaee-api", "org.json", "org.springdoc", "org.thymeleaf", "io.undertow",
         "org.jboss.xnio", "com.squareup.okio", "net.java.dev.jna", "org.scala-lang", "io.micrometer", "io.zonky.test",
-        "org.apereo.cas.client", "com.okta", "org.osgi", "io.jsonwebtoken", "com.squareup.okhttp3"
+        "org.apereo.cas.client", "com.okta", "org.osgi", "io.jsonwebtoken", "com.squareup.okhttp3",
+        "com.netflix.spectator", "io.prometheus", "software.amazon.awssdk", "org.ehcache", "net.sf.ehcache"
     };
 
     public static void main(final String[] args) throws IOException, URISyntaxException {
