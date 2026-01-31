@@ -440,7 +440,7 @@ Copyright (c) 2021 Floating UI contributors]]></entry>
 Copyright (c) 2016 Tempus Dominus]]></entry>
   <entry key="webjars-locator-core"><![CDATA[This product includes software developed by Webjars-locator core functionality
 Copyright (c) 2013 James Ward]]></entry>
-  <entry key="org.wicketstuff:wicketstuff-editable-grid"><![CDATA[This product includes software developed by WicketStuff
+  <entry key="org.wicketstuff"><![CDATA[This product includes software developed by WicketStuff
 Copyright (c) 1998-2004, Drew Davidson and Luke Blanshard]]></entry>
   <entry key="org.webjars.bowergithub.dropbox:zxcvbn"><![CDATA[This product includes software developed by zxcvbn
 Copyright (c) 2012-2016 Dan Wheeler and Dropbox, Inc.]]></entry>
@@ -469,7 +469,11 @@ Copyright (c) 2014-2016 GitHub, Inc.]]></entry>
   <entry key="org.apereo.cas"><![CDATA[This product includes software developed by Apereo CAS
 Copyright 2022, The Apereo Foundation]]></entry>
   <entry key="org.hibernate.validator:hibernate-validator"><![CDATA[This product includes software developed by Hibernate Validator
-Copyright 2022, The Hibernate Validator project]]></entry>
+Copyright: Red Hat Inc. and Hibernate Authors]]></entry>
+  <entry key="org.hibernate.models:hibernate-models"><![CDATA[This product includes software developed by Hibernate models
+Copyright: Red Hat Inc. and Hibernate Authors]]></entry>
+  <entry key="org.hibernate.orm"><![CDATA[This product includes software developed by Hibernate ORM
+Copyright Red Hat Inc. and Hibernate Authors]]></entry>
   <entry key="org.jboss.logging:jboss-logging"><![CDATA[This product includes software developed by JBoss Logging
 Copyright 2020 Red Hat, Inc.]]></entry>
   <entry key="jakarta.websocket:jakarta.websocket-api"><![CDATA[This product includes software produced and maintained by the Jakarta WebSocket project.
@@ -544,4 +548,20 @@ Copyright (c) 2012-2025 Faisal Salman <f@faisalman.com>]]></entry>
 Copyright (c) 2013 James Ward]]></entry>
   <entry key="com.microsoft.azure:adal4j"><![CDATA[This product includes software developed by Microsoft Azure Active Directory Authentication Library (ADAL) for Java
 Copyright (c) Microsoft Corporation. All rights reserved.]]></entry>
+  <entry key="ch.qos.logback"><![CDATA[This product includes software developed by Logback
+Copyright (C) 1999-2024, QOS.ch. All rights reserved.]]></entry>
+  <entry key="com.dynatrace.hash4j:hash4j"><![CDATA[This product includes software developed by hash4j
+Copyright 2025-2026 Dynatrace LLC]]></entry>
+  <entry key="com.microsoft.azure:adal4j"><![CDATA[This product includes software developed by Microsoft Azure Java JSON Library
+Copyright (c) Microsoft Corporation. All rights reserved.]]></entry>
+  <entry key="com.googlecode.owasp-java-html-sanitizer"><![CDATA[This product includes software developed by java-html-sanitizer
+Copyright (c) 2011, Mike Samuel. All rights reserved.]]></entry>
+  <entry key="org.jline"><![CDATA[This product includes software developed by JLine
+Copyright (c) 2002-2023, the original author or authors. All rights reserved.]]></entry>
+  <entry key="io.hypersistence:hypersistence-tsid"><![CDATA[This product includes software developed by TSID Generator
+Copyright (c) 2020-2022 Fabio Lima]]></entry>
+  <entry key="fingerprintjs__fingerprintjs"><![CDATA[This product includes software developed by FingerprintJS
+Copyright (c) 2025 FingerprintJS, Inc]]></entry>
+  <entry key="org.dom4j:dom4j"><![CDATA[This product includes software developed by dom4j
+Copyright 2001-2005 (C) MetaStuff, Ltd. All Rights Reserved.]]></entry>
 </properties>

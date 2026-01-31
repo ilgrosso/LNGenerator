@@ -420,7 +420,7 @@
   <entry key="tempusdominus-bootstrap-4.license">MIT</entry>
   <entry key="webjars-locator-core"><![CDATA[Webjars-locator core functionality (https://github.com/webjars/webjars-locator-core)]]></entry>
   <entry key="webjars-locator-core.license">MIT</entry>
-  <entry key="org.wicketstuff:wicketstuff-editable-grid"><![CDATA[WicketStuff (https://wicketstuff.org/)]]></entry>
+  <entry key="org.wicketstuff"><![CDATA[WicketStuff (https://wicketstuff.org/)]]></entry>
   <entry key="zxcvbn"><![CDATA[zxcvbn (https://github.com/dropbox/zxcvbn)]]></entry>
   <entry key="zxcvbn.license">MIT</entry>
   <entry key="org.webjars.bowergithub.dropbox:zxcvbn"><![CDATA[zxcvbn (https://github.com/dropbox/zxcvbn)]]></entry>
@@ -452,6 +452,9 @@
   <entry key="hal-explorer"><![CDATA[HAL Explorer (https://github.com/toedter/hal-explorer/)]]></entry>
   <entry key="hal-explorer.license">MIT</entry>
   <entry key="org.hibernate.validator:hibernate-validator"><![CDATA[Hibernate Validator (https://hibernate.org/validator/)]]></entry>
+  <entry key="org.hibernate.models:hibernate-models"><![CDATA[Hibernate models (https://github.com/hibernate/hibernate-models)]]></entry>
+  <entry key="org.hibernate.common:hibernate-commons-annotations"><![CDATA[Hibernate Commons Annotations (https://github.com/hibernate/hibernate-commons-annotations)]]></entry>
+  <entry key="org.hibernate.orm"><![CDATA[Hibernate ORM (https://hibernate.org/orm/)]]></entry>
   <entry key="org.jboss.logging:jboss-logging"><![CDATA[JBoss Logging (http://www.jboss.org/)]]></entry>
   <entry key="io.undertow"><![CDATA[Undertow (https://undertow.io/)]]></entry>
   <entry key="jakarta.websocket:jakarta.websocket-api"><![CDATA[Jakarta WebSocket API (https://projects.eclipse.org/projects/ee4j.websocket)]]></entry>
@@ -516,4 +519,22 @@
   <entry key="webjars-locator-lite.license">MIT</entry>  
   <entry key="com.microsoft.azure:adal4j"><![CDATA[Microsoft Azure Active Directory Authentication Library (ADAL) for Java (https://github.com/AzureAD/azure-activedirectory-library-for-java)]]></entry>
   <entry key="com.microsoft.azure:adal4j.license">MIT</entry>  
+  <entry key="ch.qos.logback"><![CDATA[Logback (https://logback.qos.ch/)]]></entry>
+  <entry key="ch.qos.logback.license">EPL</entry>  
+  <entry key="com.dynatrace.hash4j:hash4j"><![CDATA[hash4j (https://github.com/dynatrace-oss/hash4j)]]></entry>
+  <entry key="com.azure:azure-json"><![CDATA[Microsoft Azure Java JSON Library (https://github.com/Azure/azure-sdk-for-java)]]></entry>
+  <entry key="com.azure:azure-json.license">MIT</entry>  
+  <entry key="com.googlecode.owasp-java-html-sanitizer"><![CDATA[java-html-sanitizer (https://github.com/OWASP/java-html-sanitizer)]]></entry>
+  <entry key="org.jline"><![CDATA[JLine (https://jline.org/)]]></entry>
+  <entry key="org.jline.license">BSD</entry>  
+  <entry key="io.hypersistence:hypersistence-tsid"><![CDATA[TSID Generator (https://github.com/vladmihalcea/hypersistence-tsid)]]></entry>
+  <entry key="io.hypersistence:hypersistence-tsid.license">MIT</entry>  
+  <entry key="hypersistence-utils"><![CDATA[Hypersistence Utils (https://github.com/vladmihalcea/hypersistence-utils)]]></entry>
+  <entry key="fingerprintjs__fingerprintjs"><![CDATA[FingerprintJS (https://github.com/fingerprintjs/fingerprintjs)]]></entry>
+  <entry key="fingerprintjs__fingerprintjs.license">MIT</entry>  
+  <entry key="org.dom4j:dom4j"><![CDATA[dom4j (https://dom4j.github.io/)]]></entry>
+  <entry key="org.dom4j:dom4j.license">BSD</entry>  
+  <entry key="org.snakeyaml:snakeyaml-engine"><![CDATA[snakeyaml-engine (https://bitbucket.org/snakeyaml/snakeyaml-engine/)]]></entry>
+  <entry key="com.vaadin.external.google:android-json"><![CDATA[org.json compatible Android implementation extracted from the Android SDK]]></entry>
+  <entry key="io.smallrye:jandex"><![CDATA[Jandex (https://github.com/smallrye/jandex/)]]></entry>
 </properties>

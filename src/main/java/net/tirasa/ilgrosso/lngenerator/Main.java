@@ -175,7 +175,8 @@ public final class Main {
                                     keys.add("material");
                                 } else if (gav.getGroupId().startsWith("net.tirasa.connid")) {
                                     keys.add("net.tirasa.connid");
-                                } else if (gav.getGroupId().startsWith("com.fasterxml.jackson")) {
+                                } else if (gav.getGroupId().startsWith("com.fasterxml.jackson")
+                                        || gav.getGroupId().startsWith("tools.jackson")) {
                                     keys.add("com.fasterxml.jackson");
                                 } else if (gav.getGroupId().startsWith("com.zaxxer")
                                         && gav.getArtifactId().startsWith("HikariCP")) {
@@ -228,6 +229,20 @@ public final class Main {
                                     keys.add("com.okta");
                                 } else if ("com.sun.xml.stream.buffer".equals(gav.getGroupId())) {
                                     keys.add("com.sun.xml.messaging.saaj:saaj-impl");
+                                } else if (gav.getGroupId().startsWith("org.hibernate.orm")) {
+                                    keys.add("org.hibernate.orm");
+                                } else if (gav.getGroupId().startsWith("org.jline")) {
+                                    keys.add("org.jline");
+                                } else if (gav.getGroupId().startsWith("org.wicketstuff")) {
+                                    keys.add("org.wicketstuff");
+                                } else if (gav.getGroupId().startsWith("com.googlecode.owasp-java-html-sanitizer")) {
+                                    keys.add("com.googlecode.owasp-java-html-sanitizer");
+                                } else if (gav.getGroupId().startsWith("ch.qos.logback")) {
+                                    keys.add("ch.qos.logback");
+                                } else if (gav.getGroupId().equals("io.hypersistence")
+                                        && gav.getArtifactId().startsWith("hypersistence-utils")) {
+
+                                    keys.add("hypersistence-utils");
                                 } else {
                                     keys.add(gav.getGroupId() + ":" + gav.getArtifactId());
                                 }
